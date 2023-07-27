@@ -1,0 +1,209 @@
+:root {
+  --main-color: #212121;
+  --accent-color: #2196f3;
+  --second-color: #757575;
+  --primery-white-color: #ffffff;
+  --button-second-backgund: #f5f4fa;
+  --hero-bg: #2f303a;
+  --header-border-color: #ececec;
+  --primery-grey-color: #afb1b8;
+  --card-border-color: #eeeeee;
+  --hero-bg-hover: #188ce8;
+  --accent-color-bg-card: rgba(33, 150, 243, 0.9);
+  --cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+ul {
+  list-style: none;
+}
+.header {
+  z-index: 5;
+  top: 0;
+  position: fixed;
+  height: 142px;
+  width: 1920px;
+}
+
+.header::after {
+  content: '';
+  display: flex;
+  width: 1920px;
+  height: 1px;
+  flex-shrink: 0;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.btn__primery {
+  width: 125px;
+  height: 44px;
+  flex-shrink: 0;
+
+  background: linear-gradient(270deg, #ef5559 0%, #3e82be 100%);
+
+  border: 0px solid transparent;
+
+  color: #fff;
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%; /* 25.6px */
+  text-transform: uppercase;
+}
+
+.social-links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  max-width: 1920px;
+  height: 40px;
+  background: linear-gradient(270deg, #24469e 0%, #3e82be 100%);
+}
+.social-links__container {
+  display: flex;
+  align-items: center;
+}
+.social-links__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 27px;
+  height: 27px;
+  margin-left: 5px;
+  flex-shrink: 0;
+
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.social-links__telephone {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+
+  margin: 0px 23px 0px 23px;
+
+  color: var(--primery-white-color);
+}
+.social-links__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 53px;
+  height: 27px;
+  flex-shrink: 0;
+
+  padding: 3px 8px 5px 8px;
+  margin-right: 360px;
+
+  border-radius: 5px;
+  border: 1px solid transparent;
+  background: #6284bf;
+
+  color: var(--primery-white-color);
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 102px;
+  flex-shrink: 0;
+
+  /* background-color: var(--primery-grey-color); */
+}
+.nav-links__container {
+  display: flex;
+}
+.nav-links__items {
+  margin-right: 30px;
+}
+.nav-links__items__link {
+  text-decoration: none;
+  color: var(--primery-white-color);
+}
+.nav-links__items__btn {
+  background-color: transparent;
+  border: transparent;
+}
+
+.one {
+  margin-top: 40px;
+
+  width: 1920px;
+  height: 780px;
+  background-image: url('../images/Rectangle\ 3.png');
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.one__container {
+  /* width: 100%;
+  height: 100%; */
+
+  /* display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap; */
+}
+
+.one__title {
+  color: #57a6eb;
+  font-family: Manrope;
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 120%; /* 64.8px */
+
+  margin-bottom: 38px;
+  margin-top: 8px;
+}
+
+.one__welcome {
+  content: 'Welcome to Patent Maker';
+  color: #ef5559;
+  font-family: Manrope;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 120%; /* 24px */
+
+  margin: 0;
+}
+.one__text {
+  color: #fff;
+  font-family: Manrope;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 38.4px */
+}
+
+.one__two {
+  z-index: 1;
+  position: relative;
+
+  margin-left: 77px;
+  margin-top: 218px;
+  width: 506px;
+  height: 552px;
+  flex-shrink: 0;
+
+  background-color: gray;
+}
+
+.one__two__text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 143px;
+  height: 45px;
+  flex-shrink: 0;
+  border-radius: 7px;
+}
