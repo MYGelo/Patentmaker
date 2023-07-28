@@ -242,6 +242,14 @@ ul {
 
   background-color: rgba(60, 68, 96, 0.9);
 }
+.Efficiency-info__img {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(165deg, rgba(164, 151, 249, 0) 28.67%, rgba(164, 151, 249, 0.5) 100%),
+    url(../images/Rectangle.png), lightgray -1.978px 0px / 183.971% 100% no-repeat;
+  box-shadow: -15px 30px 40px 0px rgba(60, 68, 96, 0.15);
+  background-size: cover;
+}
 
 .Efficiency-info__text {
   display: flex;
@@ -435,8 +443,16 @@ ul {
 
   border: 2px solid #fff;
   background: linear-gradient(158deg, rgba(164, 151, 249, 0) 16.15%, rgba(164, 151, 249, 0.5) 100%),
-    url(<path-to-image>), lightgray 50% / cover no-repeat;
+    url(../images/35316ece1f6aeceec1abdc6880386d70.gif), lightgray 50% / cover no-repeat;
+  background-position: top;
 }
+/* .assistant__img:hover,
+.assistant__img:focus {
+
+  width: 555px;
+  height: 888px;
+  background-size: 788px, 1032px;
+} */
 
 .assistant__svg-container {
   display: flex;
