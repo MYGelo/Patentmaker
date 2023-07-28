@@ -22,6 +22,7 @@ ul {
   position: fixed;
   height: 142px;
   width: 1920px;
+  /* background-color: rgba(15, 14, 46, 0.17) */
 }
 
 .header::after {
@@ -49,6 +50,31 @@ ul {
   font-weight: 700;
   line-height: 160%; /* 25.6px */
   text-transform: uppercase;
+}
+
+.btn__second {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  width: 222px;
+  height: 60px;
+  flex-shrink: 0;
+
+  border: 1px solid #ee5559;
+  background: #fde6e6;
+  color: #ee5559;
+}
+.btn__second__vector {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 11px 0px 38px;
+  width: 37px;
+  height: 37px;
+  flex-shrink: 0;
+  background: #ee5559;
+  border-radius: 50%;
 }
 
 .social-links {
@@ -130,7 +156,7 @@ ul {
   border: transparent;
 }
 
-.one {
+.Efficiency-section {
   margin-top: 40px;
 
   width: 1920px;
@@ -142,7 +168,7 @@ ul {
   justify-content: center;
   align-items: center;
 }
-.one__container {
+.Efficiency-section__container {
   /* width: 100%;
   height: 100%; */
 
@@ -153,7 +179,7 @@ ul {
   flex-wrap: wrap; */
 }
 
-.one__title {
+.Efficiency-section__title {
   color: #57a6eb;
   font-family: Manrope;
   font-size: 54px;
@@ -165,7 +191,7 @@ ul {
   margin-top: 8px;
 }
 
-.one__welcome {
+.Efficiency-section__welcome {
   content: 'Welcome to Patent Maker';
   color: #ef5559;
   font-family: Manrope;
@@ -176,7 +202,7 @@ ul {
 
   margin: 0;
 }
-.one__text {
+.Efficiency-section__text {
   color: #fff;
   font-family: Manrope;
   font-size: 24px;
@@ -184,8 +210,27 @@ ul {
   font-weight: 400;
   line-height: 160%; /* 38.4px */
 }
+.Efficiency-section__btn {
+  display: flex;
+  width: 259px;
+  height: 60px;
 
-.one__two {
+  align-items: center;
+  justify-content: flex-end;
+}
+.Efficiency-section__vektor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 11px 0px 38px;
+  width: 37px;
+  height: 37px;
+  flex-shrink: 0;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+}
+
+.Efficiency-info {
   z-index: 1;
   position: relative;
 
@@ -195,10 +240,10 @@ ul {
   height: 552px;
   flex-shrink: 0;
 
-  background-color: gray;
+  background-color: rgba(60, 68, 96, 0.9);
 }
 
-.one__two__text {
+.Efficiency-info__text {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -206,4 +251,220 @@ ul {
   height: 45px;
   flex-shrink: 0;
   border-radius: 7px;
+}
+
+.Efficiency-info__text__Improvement {
+  color: #24479e;
+  background: #fff;
+  box-shadow: -15px 35px 45px 0px rgba(60, 68, 96, 0.25);
+
+  position: absolute;
+  left: -14%;
+  top: 49%;
+}
+.Efficiency-info__text__Efficiency {
+  color: white;
+  background: #57a6eb;
+  box-shadow: -15px 35px 45px 0px rgba(60, 68, 96, 0.25);
+
+  position: absolute;
+  left: 65%;
+  top: -4%;
+}
+
+.Efficiency-info__text__Technology {
+  color: white;
+  background: #3874b6;
+  box-shadow: -15px 35px 45px 0px rgba(60, 68, 96, 0.25);
+
+  position: absolute;
+  left: -10%;
+  top: 74%;
+}
+
+.Efficiency-info__text__Optimization {
+  color: white;
+  background: #24479e;
+  box-shadow: -15px 35px 45px 0px rgba(60, 68, 96, 0.15);
+
+  position: absolute;
+  left: 45%;
+  top: 95%;
+}
+
+.technology {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 1920px;
+  margin-top: 111.5px;
+  margin-bottom: 269px;
+}
+.technology__img-container {
+  width: 473px;
+  height: 541px;
+  flex-shrink: 0;
+  box-shadow: -15px 30px 40px 0px rgba(60, 68, 96, 0.15);
+  background-color: #188ce8;
+}
+.technology__img {
+  width: 100%;
+  height: 100%;
+  background: #fff url('../images/man.jpg') no-repeat center;
+  background-size: cover;
+}
+.technology__label {
+  color: #57a6eb;
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 160%; /* 25.6px */
+  text-transform: uppercase;
+}
+.technology__label::before {
+  content: '—';
+  color: #57a6eb;
+}
+.technology__title {
+  color: #071e57;
+  font-family: Manrope;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 120%; /* 62.4px */
+
+  margin: 0px 0px 39px 0px;
+}
+
+.technology__text {
+  width: 627px;
+  flex-shrink: 0;
+
+  color: #474747;
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 25.6px */
+}
+
+.assistant {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 1920px;
+  background: #f6f8fa;
+  position: relative;
+}
+.assistant__label {
+  color: #57a6eb;
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 160%; /* 25.6px */
+  text-transform: uppercase;
+}
+.assistant__label::before {
+  content: '—';
+  color: #57a6eb;
+}
+.assistant__title {
+  color: #071e57;
+  font-family: Manrope;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 120%; /* 62.4px */
+
+  margin: 6px 0px 61px 0px;
+}
+
+.assistant__text {
+  color: #474747;
+  font-family: Manrope;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%; /* 38.4px */
+}
+
+.assistant__list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px;
+
+  gap: 34px 28px;
+  margin: 0;
+}
+
+.assistant__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center;  */
+
+  width: 210px;
+  height: 241px;
+  flex-shrink: 0;
+
+  border-radius: 7px;
+  background: #fff;
+  box-shadow: -15px 40px 40px 0px rgba(60, 68, 96, 0.1);
+
+  /* width: calc((100% / 3) - 20px + 20px / 4); */
+}
+
+.assistant__item__text {
+  color: #071e57;
+  text-align: center;
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 160%; /* 25.6px */
+}
+
+.assistant__img {
+  width: 394px;
+  height: 516px;
+  flex-shrink: 0;
+
+  border: 2px solid #fff;
+  background: linear-gradient(158deg, rgba(164, 151, 249, 0) 16.15%, rgba(164, 151, 249, 0.5) 100%),
+    url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
+
+.assistant__svg-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 29px 0px 31px;
+}
+.assistant__svg {
+  width: 105px;
+  height: 105px;
+  flex-shrink: 0;
+
+  margin: 25px 0px 19px 0px;
+
+  border-radius: 50%;
+  background: #f6f8fa;
+}
+.assistant__svg-vector {
+  width: 12px;
+  height: 6px;
+  flex-shrink: 0;
+}
+
+.assistant__btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  width: 222px;
+  height: 60px;
 }
