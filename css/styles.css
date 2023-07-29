@@ -86,7 +86,7 @@ ul {
   justify-content: flex-end;
   align-items: center;
 
-  margin: auto;
+  /* margin: auto; */
   max-width: 1920px;
   height: 40px;
   background: linear-gradient(270deg, #24469e 0%, #3e82be 100%);
@@ -142,6 +142,7 @@ ul {
   align-items: center;
   justify-content: center;
   height: 102px;
+  width: 1920px;
   flex-shrink: 0;
 
   /* background-color: var(--primery-grey-color); */
