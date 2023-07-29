@@ -555,7 +555,6 @@ ul {
   overflow: hidden;
   width: 1920px;
   background: #f6f8fa;
-
 }
 .partners__title {
   color: #071e57;
@@ -724,10 +723,9 @@ ul {
   align-items: center;
   justify-content: space-between;
 
-  margin-top: 76px;
+  margin: 76px auto 0 auto;
 
   width: 1200px;
-  margin: 0 auto;
 
   color: rgba(255, 255, 255, 0.5);
   font-family: Manrope;
