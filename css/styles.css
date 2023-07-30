@@ -181,15 +181,34 @@ h4 {
   background-color: transparent;
   border: transparent;
 }
+.Efficiency-section__title {
+  color: #57a6eb;
 
+  font-size: 54px;
+
+  margin-bottom: 38px;
+  margin-top: 8px;
+}
+
+.Efficiency-section__welcome {
+  content: 'Welcome to Patent Maker';
+  color: #ef5559;
+
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 120%; /* 24px */
+
+  margin: 0;
+}
 @media screen and (max-width: 479px) {
   .Efficiency_container {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 
-    max-width: 1920px;
-    flex-wrap: wrap;
+    width: 1169px;
 
     background-image: url('../images/Rectangle\ 3.png');
   }
@@ -198,15 +217,34 @@ h4 {
     flex-direction: column;
     align-items: center;
   }
+  .Efficiency-section__welcome {
+    content: 'Welcome to Patent Maker';
+    color: #ef5559;
+
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 120%; /* 24px */
+
+    margin: 0;
+    margin-top: 80px;
+  }
+
+  .technology__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
 }
 @media screen and (min-width: 480px) and (max-width: 1199px) {
   .Efficiency_container {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    /* flex-direction: column; */
 
-    max-width: 1920px;
+    width: 1344px;
     background-image: url('../images/Rectangle\ 3.png');
   }
   .Efficiency-section__container {
@@ -326,26 +364,6 @@ h4 {
   position: relative;
 }
 
-.Efficiency-section__title {
-  color: #57a6eb;
-
-  font-size: 54px;
-
-  margin-bottom: 38px;
-  margin-top: 8px;
-}
-
-.Efficiency-section__welcome {
-  content: 'Welcome to Patent Maker';
-  color: #ef5559;
-
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: 120%; /* 24px */
-
-  margin: 0;
-}
 .Efficiency-section__text {
   color: #fff;
 }
