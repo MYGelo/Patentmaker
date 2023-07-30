@@ -13,8 +13,11 @@
   --cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (max-width: 479px) {
+
 }
 @media screen and (min-width: 480px) {
+
+  
 }
 body {
   margin: 0 auto;
@@ -41,6 +44,7 @@ h4 {
   font-style: normal;
   line-height: 120%; /* 64.8px */
 }
+
 
 @property --myColor1 {
   syntax: '<color>';
@@ -194,9 +198,6 @@ h4 {
   width: 100%;
   /* background-color: rgba(15, 14, 46, 0.17) */
 }
-.header__container {
-
-}
 
 .header::after {
   content: '';
@@ -250,7 +251,7 @@ h4 {
   align-items: center;
   justify-content: center;
   height: 102px;
-  max-width: 1920px;
+  width: 1920px;
   flex-shrink: 0;
 
   /* background-color: var(--primery-grey-color); */
@@ -269,19 +270,14 @@ h4 {
 .Efficiency-section {
   margin: 40px auto 0px auto;
 
-
+  width: 1920px;
+  height: 780px;
+  background-image: url('../images/Rectangle\ 3.png');
   position: relative;
-}
-.Efficiency_container {
+
   display: flex;
   justify-content: center;
   align-items: center;
-
-  max-width: 1920px;
-  height: 780px;
-
-    background-image: url('../images/Rectangle\ 3.png');
-
 }
 .Efficiency-section__container {
   /* width: 100%;
@@ -401,14 +397,13 @@ h4 {
 }
 
 .technology {
-  margin: 111.5px auto 269px auto;
-}
-.technology__container {
   display: flex;
   justify-content: center;
   align-items: center;
 
-  max-width: 1920px;
+  width: 1920px;
+
+  margin: 111.5px auto 269px auto;
 }
 .technology__img-container {
   width: 473px;
@@ -450,17 +445,15 @@ h4 {
 }
 
 .assistant {
-  margin: 0 auto;
-
-  background: #f6f8fa;
-  position: relative;
-}
-.assistant__container {
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  max-width: 1920px;
+  margin: 0 auto;
+
+  width: 1920px;
+  background: #f6f8fa;
+  position: relative;
 }
 .assistant__label {
   color: #57a6eb;
@@ -564,14 +557,14 @@ h4 {
 }
 
 .product {
+  display: flex;
+  justify-content: center;
+  width: 1920px;
+  margin-top: 221px;
+
   margin: 221px auto;
 }
 .product__container {
-  display: flex;
-  justify-content: center;
-  max-width: 1920px;
-}
-.product__text-container {
   margin-top: 20px;
   width: 613px;
   margin-right: 78px;
@@ -656,7 +649,7 @@ h4 {
 .partners {
   margin: 130px auto 0px auto;
   overflow: hidden;
-  max-width: 1920px;
+  width: 1920px;
   background: #f6f8fa;
 }
 .partners__title {
@@ -713,7 +706,7 @@ h4 {
   justify-content: center;
 
   position: relative;
-  max-width: 1920px;
+  width: 1920px;
   height: 672px;
   flex-shrink: 0;
 
@@ -781,7 +774,7 @@ h4 {
 }
 
 .footer {
-  max-width: 1920px;
+  width: 1920px;
   height: 388px;
   flex-shrink: 0;
 
