@@ -371,7 +371,10 @@
             </p>
             <form>
               <label for="input-name">
-                <div>
+                <div class="contactUs__label">
+                  <svg class="contactUs__svg">
+                    <use href="./images/symbol-defs.svg#icon-Frame-14"></use>
+                  </svg>
                   <input
                     class="contactUs__input"
                     type="input-name"
@@ -379,15 +382,16 @@
                     placeholder=" Name*"
                     required=""
                     id="input-name"
+                    autocomplete="off"
                   />
-                  <!-- <svg class="modal__svg">
-                  <use href="./images/icons.svg#person"></use>
-                </svg> -->
                 </div>
               </label>
 
               <label for="input-phone">
-                <div>
+                <div class="contactUs__label">
+                  <svg class="contactUs__svg">
+                    <use href="./images/symbol-defs.svg#icon-Frame-15"></use>
+                  </svg>
                   <input
                     class="contactUs__input"
                     type="input-phone"
@@ -395,15 +399,16 @@
                     placeholder=" Phone"
                     required=""
                     id="input-phone"
+                    autocomplete="off"
                   />
-                  <!-- <svg class="modal__svg">
-                  <use href="./images/icons.svg#phone"></use>
-                </svg> -->
                 </div>
               </label>
 
               <label for="input-mail">
-                <div>
+                <div class="contactUs__label">
+                  <svg class="contactUs__svg">
+                    <use href="./images/symbol-defs.svg#icon-Frame-16"></use>
+                  </svg>
                   <input
                     class="contactUs__input"
                     type="input-email"
@@ -411,33 +416,36 @@
                     placeholder=" Email*"
                     required=""
                     id="input-email"
+                    autocomplete="off"
                   />
-                  <!-- <svg class="modal__svg">
-                  <use href="./images/icons.svg#email"></use>
-                </svg> -->
                 </div>
               </label>
 
               <label for="input-massage">
-                <textarea
-                  class="contactUs__input"
-                  name="feedback"
-                  placeholder=" Message"
-                  resize="none"
-                ></textarea>
+                <div class="contactUs__label">
+                  <svg class="contactUs__svg">
+                    <use href="./images/symbol-defs.svg#icon-Frame-17"></use>
+                  </svg>
+                  <textarea
+                    style="width: 478px; height: 18px"
+                    class="contactUs__input"
+                    name="feedback"
+                    placeholder=" Message"
+                    resize="none"
+                    autocomplete="off"
+                  ></textarea>
+                </div>
               </label>
 
-              <!-- <button type="submit">Send message</button> -->
+              <button class="btn button__tertiary contactUs__btn" type="submit">
+                Send message
+                <div class="Efficiency-section__vektor">
+                  <svg style="width: 16.34px; height: 14.4px">
+                    <use href="./images/symbol-defs.svg#icon-arrow"></use>
+                  </svg>
+                </div>
+              </button>
             </form>
-
-            <button class="btn button__tertiary contactUs__btn" type="submit">
-              Send message
-              <div class="Efficiency-section__vektor">
-                <svg style="width: 16.34px; height: 14.4px">
-                  <use href="./images/symbol-defs.svg#icon-arrow"></use>
-                </svg>
-              </div>
-            </button>
           </div>
         </section>
       </hero>

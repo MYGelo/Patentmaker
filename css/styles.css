@@ -13,11 +13,8 @@
   --cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (max-width: 479px) {
-
 }
 @media screen and (min-width: 480px) {
-
-  
 }
 body {
   margin: 0 auto;
@@ -44,7 +41,6 @@ h4 {
   font-style: normal;
   line-height: 120%; /* 64.8px */
 }
-
 
 @property --myColor1 {
   syntax: '<color>';
@@ -634,8 +630,7 @@ h4 {
 .video-section__title {
   color: #fff;
   text-align: center;
-
-  text-align: center;
+  font-size: 24px;
 }
 .video-section__text {
   color: #fff;
@@ -744,6 +739,8 @@ h4 {
 }
 
 .contactUs__input {
+  padding-left: 30px;
+  padding-bottom: 11px;
   width: 475px;
 
   margin: 15px auto 15px auto;
@@ -763,14 +760,28 @@ h4 {
 .contactUs__input:focus,
 .contactUs__input:focus-within,
 .contactUs__input:focus-visible {
-  border-color: white;
-  outline: 1px solid white;
+  border-color: 1px solid transparent;
+  outline: 1px solid transparent;
   border-radius: 4px;
+  border-bottom: 1px solid red;
+  border-bottom-left-radius: 4px;
 
   -webkit-box-shadow: 0 0 0px 1000px transparent inset;
 }
 .contactUs__input::placeholder {
   color: #fff;
+  
+}
+
+.contactUs__label {
+  position: relative;
+}
+
+.contactUs__svg {
+  position: absolute;
+  bottom: 27px;
+  width: 24px;
+  height: 24px;
 }
 
 .footer {
