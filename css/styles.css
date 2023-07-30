@@ -613,6 +613,60 @@ ul {
   line-height: 160%; /* 25.6px */
 }
 
+.video-section {
+  position: relative;
+
+  display: flex;
+  align-items: flex-end;
+  /* justify-content: center; */
+
+  margin: 0 auto;
+  width: 1345px;
+  height: 656px;
+  flex-shrink: 0;
+
+  background: linear-gradient(0deg, #3e82be 0%, #3e82be 100%), url(../images/Rectangle\ 95.png),
+    lightgray -36.892px -1293.485px / 139.63% 308.148% no-repeat;
+}
+
+.video {
+
+  position: absolute;
+  left: 21%;
+  top: -75px;
+  background-color: #071E57;
+
+  width: 780px;
+  height: 462px;
+  flex-shrink: 0;
+
+  border-radius: 20px;
+  border: 10px solid #071E57;
+}
+.video-section__text-container {
+  width: 937px;
+  margin: auto 204px 78px 204px;
+}
+.video-section__title {
+  color: #fff;
+  text-align: center;
+  font-family: Manrope;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 120%; /* 28.8px */
+
+  text-align: center;
+}
+.video-section__text {
+  color: #fff;
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 25.6px */
+}
+
 .partners {
   margin: 130px auto 0px auto;
   overflow: hidden;
