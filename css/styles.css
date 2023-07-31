@@ -12,14 +12,10 @@
   --accent-color-bg-card: rgba(33, 150, 243, 0.9);
   --cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (max-width: 479px) {
-}
-@media screen and (min-width: 480px) {
-}
+
 body {
   margin: 0 auto;
   max-width: 1920px;
-
   font-family: Manrope;
 }
 
@@ -265,32 +261,24 @@ h4 {
 
 .Efficiency-section {
   margin: 40px auto 0px auto;
-
-  width: 1920px;
-  height: 780px;
-  background-image: url('../images/Rectangle\ 3.png');
-  position: relative;
-
+}
+.Efficiency-section__container {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.Efficiency-section__container {
-  /* width: 100%;
-  height: 100%; */
 
-  /* display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-content: center;
-  flex-wrap: wrap; */
+  padding-left: 15px;
+  padding-right: 15px;
+
+  width: 100%;
+  height: 780px;
+  background-image: url('../images/Rectangle\ 3.png');
+  position: relative;
 }
 
 .Efficiency-section__title {
   color: #57a6eb;
-
   font-size: 54px;
-
   margin-bottom: 38px;
   margin-top: 8px;
 }
@@ -373,7 +361,6 @@ h4 {
   left: 65%;
   top: -4%;
 }
-
 
 .Efficiency-info__text__Technology {
   color: white;
@@ -775,14 +762,11 @@ h4 {
 }
 .contactUs__input::placeholder {
   color: #fff;
-  
 }
 
 .contactUs__label {
   position: relative;
 }
-
-
 
 .footer {
   width: 1920px;
@@ -882,4 +866,57 @@ h4 {
 
 .footer__under__item:nth-last-child(1)::after {
   color: black;
+}
+.container {
+  max-width: 1920px;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+  .Efficiency-section__container {
+    flex-direction: column;
+    height: 100%;
+  }
+  .Efficiency-section__welcome {
+    font-size: 13px;
+  }
+  .Efficiency-section__title {
+    font-size: 27px;
+    margin-bottom: 17px;
+    margin-top: 4px;
+  }
+  .Efficiency-section__text {
+    font-size: 10px;
+  }
+  .Efficiency-info {
+    margin-left: 20px;
+    margin-top: 145px;
+    width: 354px;
+    height: 386px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+  .Efficiency-section__welcome {
+    font-size: 16px;
+  }
+  .Efficiency-section__title {
+    font-size: 35px;
+    margin-bottom: 17px;
+    margin-top: 4px;
+  }
+  .Efficiency-section__text {
+    font-size: 15px;
+  }
+  .Efficiency-info {
+    margin-left: 20px;
+    margin-top: 145px;
+    width: 354px;
+    height: 386px;
+  }
 }
