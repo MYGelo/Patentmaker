@@ -705,18 +705,22 @@ h4 {
 .contactUs {
   display: flex;
   justify-content: center;
+  flex-direction: column;
 
-  position: relative;
-  /* width: 1920px; */
+  max-width: 1200px;
   height: 672px;
   flex-shrink: 0;
-
+  margin: auto;
+  padding-left: 30px;
+}
+.contactUs__bg {
+  position: relative;
   background: 
   /* linear-gradient(0deg, rgba(56, 116, 182, 0.9) 0%, rgba(56, 116, 182, 0.9) 100%), */ url(../images/Rectangle\ 41.png),
     lightgray 50% / cover no-repeat;
 }
 
-.contactUs::after {
+.contactUs__bg::after {
   content: '';
   /* opacity: 0.7; */
   display: block;
@@ -729,19 +733,19 @@ h4 {
   left: 45%;
 }
 .contactUs__title {
-  margin: 57px auto 0 auto;
+  margin: 57px auto 0 0;
   color: #fff;
 }
 
 .contactUs__text {
-  margin: 0px auto 49px auto;
+  margin: 0px auto 49px 0;
   color: #fff;
 
   font-size: 16px;
 }
 
 .contactUs__form {
-  width: 475px;
+  z-index: 1;
 }
 
 .contactUs__input {
@@ -892,8 +896,8 @@ h4 {
 @media screen and (max-width: 1024px) {
   .container {
     max-width: 1024px;
-    padding-left: 16px;
-    padding-right: 16px;
+    /* padding-left: 16px;
+    padding-right: 16px; */
   }
   .product {
     align-items: center;
@@ -929,8 +933,18 @@ h4 {
     text-align: start;
   }
   .footer__title {
-   margin: 5px auto;
+    margin: 5px auto;
   }
+
+  .contactUs {
+    padding-left: 40px;
+    padding-right: 5px;
+  }
+  /* .contactUs__title,
+  .contactUs__text {
+    margin-left: 0px;
+    text-align: start;
+  } */
 }
 @media screen and (max-width: 768px) {
   .container {
@@ -968,11 +982,29 @@ h4 {
 
     margin: 10px auto 0 auto;
   }
+  .contactUs {
+    padding-left: 5px;
+  }
+
+  .contactUs__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contactUs__title,
+  .contactUs__text {
+    margin: auto;
+    text-align: start;
+  }
 }
 
 @media screen and (max-width: 479px) {
   .container {
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .contactUs__input {
+    width: 90%;
   }
 }
