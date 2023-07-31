@@ -265,6 +265,7 @@ h4 {
 
 .Efficiency-section {
   margin: 40px auto 0px auto;
+  padding: 15px;
 
   /* width: 1920px; */
   /* height: 780px; */
@@ -403,7 +404,7 @@ h4 {
 
   /* width: 1920px; */
 
-  padding: 5px;
+  padding: 15px;
   margin: 111.5px auto 269px auto;
 }
 .technology__container {
@@ -970,6 +971,20 @@ h4 {
   .technology__img-container {
     max-width: 364px;
   }
+  .Efficiency-section {
+    
+    flex-direction: column;
+  }
+  .Efficiency-section__container {
+    margin-top: 150px;
+    text-align: center;
+  }
+  .Efficiency-section__btn {
+    margin: 30px auto;
+  }
+  .Efficiency-info {
+    margin-top: 100px;
+  }
 }
 @media screen and (max-width: 768px) {
   .container {
@@ -1035,7 +1050,7 @@ h4 {
     border: 3px solid #071e57;
   }
   .technology {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
   .technology__img-container {
     max-width: 473px;
