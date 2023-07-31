@@ -12,13 +12,10 @@
   --accent-color-bg-card: rgba(33, 150, 243, 0.9);
   --cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (max-width: 479px) {
-}
-@media screen and (min-width: 480px) {
-}
+
 body {
   margin: 0 auto;
-  max-width: 1920px;
+  /* max-width: 1920px; */
 
   font-family: Manrope;
 }
@@ -210,7 +207,7 @@ h4 {
   align-items: center;
 
   /* margin: auto; */
-  max-width: 1920px;
+  /*  max-width: 1920px; */
   height: 40px;
   background: linear-gradient(270deg, #24469e 0%, #3e82be 100%);
 }
@@ -247,7 +244,7 @@ h4 {
   align-items: center;
   justify-content: center;
   height: 102px;
-  width: 1920px;
+  /* width: 1920px; */
   flex-shrink: 0;
 
   /* background-color: var(--primery-grey-color); */
@@ -266,8 +263,8 @@ h4 {
 .Efficiency-section {
   margin: 40px auto 0px auto;
 
-  width: 1920px;
-  height: 780px;
+  /* width: 1920px; */
+  /* height: 780px; */
   background-image: url('../images/Rectangle\ 3.png');
   position: relative;
 
@@ -374,7 +371,6 @@ h4 {
   top: -4%;
 }
 
-
 .Efficiency-info__text__Technology {
   color: white;
   background: #3874b6;
@@ -402,13 +398,13 @@ h4 {
   justify-content: center;
   align-items: center;
 
-  width: 1920px;
+  /* width: 1920px; */
 
   margin: 111.5px auto 269px auto;
 }
 .technology__img-container {
-  width: 473px;
-  height: 541px;
+  max-width: 473px;
+  max-height: 541px;
   flex-shrink: 0;
   box-shadow: -15px 30px 40px 0px rgba(60, 68, 96, 0.15);
   background-color: #188ce8;
@@ -438,7 +434,7 @@ h4 {
 }
 
 .technology__text {
-  width: 627px;
+  max-width: 627px;
 
   color: #474747;
 
@@ -452,7 +448,7 @@ h4 {
 
   margin: 0 auto;
 
-  width: 1920px;
+  /* width: 1920px; */
   background: #f6f8fa;
   position: relative;
 }
@@ -560,14 +556,17 @@ h4 {
 .product {
   display: flex;
   justify-content: center;
-  width: 1920px;
+
+  align-items: center;
+
+  /* width: 1920px; */
   margin-top: 221px;
 
   margin: 221px auto;
 }
 .product__container {
   margin-top: 20px;
-  width: 613px;
+  max-width: 613px;
   margin-right: 78px;
 }
 
@@ -607,8 +606,8 @@ h4 {
   /* justify-content: center; */
 
   margin: 0 auto;
-  width: 1345px;
-  height: 656px;
+  max-width: 1345px;
+  max-height: 656px;
   flex-shrink: 0;
 
   background: linear-gradient(0deg, #3e82be 0%, #3e82be 100%), url(../images/Rectangle\ 95.png),
@@ -621,15 +620,15 @@ h4 {
   top: -75px;
   background-color: #071e57;
 
-  width: 780px;
-  height: 462px;
+  max-width: 780px;
+  max-height: 462px;
   flex-shrink: 0;
 
   border-radius: 20px;
   border: 10px solid #071e57;
 }
 .video-section__text-container {
-  width: 937px;
+  max-width: 937px;
   margin: auto 204px 78px 204px;
 }
 .video-section__title {
@@ -649,7 +648,7 @@ h4 {
 .partners {
   margin: 130px auto 0px auto;
   overflow: hidden;
-  width: 1920px;
+  /* width: 1920px; */
   background: #f6f8fa;
 }
 .partners__title {
@@ -706,7 +705,7 @@ h4 {
   justify-content: center;
 
   position: relative;
-  width: 1920px;
+  /* width: 1920px; */
   height: 672px;
   flex-shrink: 0;
 
@@ -775,17 +774,14 @@ h4 {
 }
 .contactUs__input::placeholder {
   color: #fff;
-  
 }
 
 .contactUs__label {
   position: relative;
 }
 
-
-
 .footer {
-  width: 1920px;
+  /* width: 1920px; */
   height: 388px;
   flex-shrink: 0;
 
@@ -882,4 +878,55 @@ h4 {
 
 .footer__under__item:nth-last-child(1)::after {
   color: black;
+}
+
+.container {
+  overflow: hidden;
+  width: 100%;
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (max-width: 1024px) {
+  .container {
+    max-width: 1024px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .product {
+    align-items: center;
+    flex-direction: column;
+
+    margin: 221px auto;
+  }
+  .product__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 20px auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 768px;
+    /* padding-left: 24px;
+    padding-right: 24px; */
+  }
+  /* .video-section {
+    max-width: 768px;
+    max-height: 462px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  } */
+}
+
+@media screen and (max-width: 479px) {
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }
