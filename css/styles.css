@@ -976,7 +976,7 @@ h4 {
   background-size: cover;
   z-index: 999;
 
-  transform: translateY(-100%);
+  transform: translateY(-300%);
   transition: transform 250ms ease-in-out;
 }
 
