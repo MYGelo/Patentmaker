@@ -854,7 +854,7 @@ h4 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  
+
   margin: 76px auto 0 auto;
 
   max-width: 1200px;
@@ -908,28 +908,35 @@ h4 {
 
     margin: 20px auto;
   }
+  .footer__menu {
+    margin: auto;
+    text-align: start;
+  }
+  .footer__menu {
+    margin: auto;
+    text-align: start;
+    margin-left: 10px;
+    margin-top: 25px;
+  }
+  .footer__resources {
+    margin: auto;
+    text-align: start;
+    margin-left: 10px;
+    margin-top: 25px;
+  }
+  .footer__product {
+    margin: auto;
+    text-align: start;
+  }
+  .footer__title {
+   margin: 5px auto;
+  }
 }
 @media screen and (max-width: 768px) {
   .container {
     max-width: 768px;
     /* padding-left: 24px;
     padding-right: 24px; */
-  }
-  /* .video-section {
-    max-width: 768px;
-    max-height: 462px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-  } */
-}
-
-@media screen and (max-width: 479px) {
-  .container {
-    padding-left: 16px;
-    padding-right: 16px;
   }
   .footer__nav {
     flex-direction: column;
@@ -955,10 +962,17 @@ h4 {
   .footer__nav::after {
     bottom: -1%;
   }
-  .footer__under{
+  .footer__under {
     flex-direction: column;
     align-items: center;
 
     margin: 10px auto 0 auto;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
