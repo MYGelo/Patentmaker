@@ -403,14 +403,18 @@ h4 {
 
   /* width: 1920px; */
 
+  padding: 5px;
   margin: 111.5px auto 269px auto;
+}
+.technology__container {
+  margin-left: 100px;
 }
 .technology__img-container {
   max-width: 473px;
   max-height: 541px;
   flex-shrink: 0;
   box-shadow: -15px 30px 40px 0px rgba(60, 68, 96, 0.15);
-  background-color: #188ce8;
+  background-color: #fff;
 }
 .technology__img {
   width: 100%;
@@ -913,8 +917,6 @@ h4 {
     align-items: center;
     text-align: center;
 
-
-  
     margin: 20px auto;
   }
   .footer__menu {
@@ -959,6 +961,14 @@ h4 {
 
     border-radius: 20px;
     border: 3px solid #071e57;
+  }
+
+  .technology__container {
+    text-align: center;
+    margin-left: 10px;
+  }
+  .technology__img-container {
+    max-width: 364px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1023,6 +1033,13 @@ h4 {
 
     border-radius: 20px;
     border: 3px solid #071e57;
+  }
+  .technology {
+    flex-direction: column;
+  }
+  .technology__img-container {
+    max-width: 473px;
+   
   }
 }
 
