@@ -60,26 +60,30 @@
           </svg>
         </button>
       </div>
+
       <nav class="nav-links">
-        <svg><use href="./images/symbol-defs.svg#logo" /></svg>
-        <ul class="nav-links__container">
+        <a href="./index.html">
+          <svg style="margin-right: 40px"><use href="./images/symbol-defs.svg#logo" /></svg>
+        </a>
+
+        <ul class="menu">
           <li class="nav-links__items">
-            <a class="nav-links__items__link" href="./contacts.html">Product</a>
+            <a class="link nav-links__items__link" href="./index.html">Product</a>
           </li>
           <li class="nav-links__items">
-            <a class="nav-links__items__link" href="./contacts.html">Firm</a>
+            <a class="link nav-links__items__link" href="./index.html">Firm</a>
           </li>
           <li class="nav-links__items">
-            <a class="nav-links__items__link" href="./contacts.html">Pricing</a>
+            <a class="link nav-links__items__link" href="./index.html">Pricing</a>
           </li>
           <li class="nav-links__items">
-            <a class="nav-links__items__link" href="./contacts.html">Resources</a>
+            <a class="link nav-links__items__link" href="./index.html">Resources</a>
           </li>
           <li class="nav-links__items">
-            <a class="nav-links__items__link" href="./contacts.html">Support</a>
+            <a class="link nav-links__items__link" href="./index.html">Support</a>
           </li>
           <li class="nav-links__items">
-            <a class="nav-links__items__link" href="./contacts.html">Contact</a>
+            <a class="link nav-links__items__link" href="./index.html">Contact</a>
           </li>
         </ul>
         <button class="btn btn__header button__primery" type="button">free trial</button>
@@ -89,8 +93,23 @@
           </svg>
         </button>
         <button class="nav-links__items__btn" type="button">
-          <svg style="width: 26px; height: 26px">
+          <svg style="width: 26px; height: 26px; margin-right: 18px">
             <use href="./images/symbol-defs.svg#icon-man"></use>
+          </svg>
+        </button>
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg
+            width="40"
+            height="40"
+            fill="#57a6eb"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
           </svg>
         </button>
       </nav>
@@ -567,6 +586,71 @@
         <span>All rights reserved 2023. PatentMaker.com</span>
       </section>
     </footer>
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <svg style="margin-right: 40px"><use href="./images/symbol-defs.svg#logo" /></svg>
+
+      <ul class="mobile-menu">
+        <li class="nav-links__items">
+          <a class="link nav-links__items__link" href="./index.html">Product</a>
+        </li>
+        <li class="nav-links__items">
+          <a class="link nav-links__items__link" href="./index.html">Firm</a>
+        </li>
+        <li class="nav-links__items">
+          <a class="link nav-links__items__link" href="./index.html">Pricing</a>
+        </li>
+        <li class="nav-links__items">
+          <a class="link nav-links__items__link" href="./index.html">Resources</a>
+        </li>
+        <li class="nav-links__items">
+          <a class="link nav-links__items__link" href="./index.html">Support</a>
+        </li>
+        <li class="nav-links__items">
+          <a class="link nav-links__items__link" href="./index.html">Contact</a>
+        </li>
+      </ul>
+
+      <div class="mobile-menu__btn-container">
+        <button class="mobile-menu__btn" style="margin-right:30px;" type="button">
+          <svg style="width: 26px; height: 26px">
+            <use href="./images/symbol-defs.svg#icon-Frame-3"></use>
+          </svg>
+        </button>
+
+        <button class="btn button__primery" type="button">
+          free trial
+          <div class="Efficiency-section__vektor">
+            <svg style="width: 16.34px; height: 14.4px">
+              <use href="./images/symbol-defs.svg#icon-arrow"></use>
+            </svg>
+          </div>
+        </button>
+
+        <button class="mobile-menu__btn" type="button">
+          <svg style="width: 26px; height: 26px; margin: 0 30px">
+            <use href="./images/symbol-defs.svg#icon-man"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
     <!-- <script src="./js/langue.js" type="module" defer></script> -->
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
