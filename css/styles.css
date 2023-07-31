@@ -30,6 +30,7 @@ p {
   font-style: normal;
   font-weight: 400;
   line-height: 160%; /* 38.4px */
+  margin: 0;
 }
 h1,
 h2,
@@ -609,7 +610,7 @@ h4 {
 
   margin: 0 auto;
   max-width: 1345px;
-  max-height: 656px;
+  min-height: 656px;
   flex-shrink: 0;
 
   background: linear-gradient(0deg, #3e82be 0%, #3e82be 100%), url(../images/Rectangle\ 95.png),
@@ -940,17 +941,25 @@ h4 {
     padding-left: 40px;
     padding-right: 5px;
   }
-  /* .contactUs__title,
-  .contactUs__text {
-    margin-left: 0px;
-    text-align: start;
-  } */
+  .video-section__text-container {
+    margin: auto;
+    padding: 0 30px;
+    margin-bottom: 78px;
+  }
+  .video {
+    left: 10%;
+    top: -70px;
+
+    width: 80%;
+    height: 430px;
+
+    border-radius: 20px;
+    border: 3px solid #071e57;
+  }
 }
 @media screen and (max-width: 768px) {
   .container {
     max-width: 768px;
-    /* padding-left: 24px;
-    padding-right: 24px; */
   }
   .footer__nav {
     flex-direction: column;
@@ -996,6 +1005,21 @@ h4 {
     margin: auto;
     text-align: start;
   }
+  .video-section__text-container {
+    margin: auto;
+    padding: 0 30px;
+    margin-bottom: 35px;
+  }
+  .video {
+    left: 5%;
+    top: -60px;
+
+    width: 90%;
+    height: 430px;
+
+    border-radius: 20px;
+    border: 3px solid #071e57;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -1006,5 +1030,15 @@ h4 {
 
   .contactUs__input {
     width: 90%;
+  }
+  .video {
+    left: 2%;
+    top: -50px;
+
+    width: 95%;
+    height: 360px;
+
+    border-radius: 20px;
+    border: 3px solid #071e57;
   }
 }
