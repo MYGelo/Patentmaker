@@ -455,10 +455,18 @@ h4 {
   align-items: center;
 
   margin: 0 auto;
+  /* padding: 15px; */
 
   /* width: 1920px; */
   background: #f6f8fa;
   position: relative;
+}
+.assistant__container {
+  max-width: 1199px;
+  padding: 15px;
+}
+.assistant__list-container {
+  display: flex;
 }
 .assistant__label {
   color: #57a6eb;
@@ -559,6 +567,11 @@ h4 {
   width: 12px;
   height: 6px;
   flex-shrink: 0;
+}
+.assistant__btn-container {
+  display: flex;
+  justify-content: center;
+  margin: 81px 0px 13px 0px;
 }
 
 .product {
@@ -900,6 +913,33 @@ h4 {
   margin-left: auto;
   margin-right: auto;
 }
+@media screen and (max-width: 1240px) {
+  .assistant__container {
+    text-align: center;
+  }
+  .assistant__list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .assistant__list {
+    max-width: 688px;
+    /* margin: 30px; */
+  }
+  .assistant__list {
+    margin: 50px 0;
+  }
+  .assistant__svg-container {
+    margin: 0px 29px 50px 31px;
+    rotate: 90deg;
+  }
+  .Efficiency-section__title {
+    font-size: 45px;
+  }
+  .Efficiency-section__text {
+    font-size: 19px;
+  }
+}
 @media screen and (max-width: 1024px) {
   .container {
     max-width: 1024px;
@@ -972,7 +1012,6 @@ h4 {
     max-width: 364px;
   }
   .Efficiency-section {
-    
     flex-direction: column;
   }
   .Efficiency-section__container {
@@ -1054,7 +1093,18 @@ h4 {
   }
   .technology__img-container {
     max-width: 473px;
-   
+  }
+
+  .assistant__list {
+    max-width: 448px;
+    margin: 30px;
+  }
+
+  .Efficiency-section__title {
+    font-size: 40px;
+  }
+  .Efficiency-section__text {
+    font-size: 17px;
   }
 }
 
@@ -1076,5 +1126,29 @@ h4 {
 
     border-radius: 20px;
     border: 3px solid #071e57;
+  }
+  .assistant__list {
+    max-width: 300px;
+    margin: 5px;
+  }
+  .assistant__item {
+    width: 300px;
+    height: 241px;
+  }
+  .assistant__btn-container {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .assistant__btn-second {
+    margin: 0 0 30px 0;
+  }
+  .Efficiency-section__welcome {
+    font-size: 15px;
+  }
+  .Efficiency-section__title {
+    font-size: 30px;
+  }
+  .Efficiency-section__text {
+    font-size: 15px;
   }
 }
