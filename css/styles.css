@@ -673,9 +673,14 @@ h4 {
 }
 
 .video {
-  position: absolute;
-  left: 21%;
-  top: -75px;
+  /* position: absolute;
+  left: 21%; */
+  /* top: -75px; */
+  position: relative;
+
+  top: -250px;
+  left: -50%;
+
   background-color: #071e57;
 
   max-width: 780px;
@@ -1087,6 +1092,14 @@ h4 {
   .Efficiency-section__text {
     font-size: 19px;
   }
+  .video {
+    /* left: 10%; */
+    /* top: -30px; */
+    /* width: 80%; */
+    /* height: 430px; */
+
+    border: 8px solid #071e57;
+  }
 }
 @media screen and (max-width: 1024px) {
   .container {
@@ -1141,13 +1154,14 @@ h4 {
     margin-bottom: 78px;
   }
   .video {
-    left: 10%;
-    top: -30px;
+    /* left: 10%; */
+    top: -225px;
 
-    width: 80%;
-    height: 430px;
+    /* width: 80%; */
+    /* height: 430px; */
+    width: 740px;
 
-    border-radius: 20px;
+    /* border-radius: 20px; */
     border: 3px solid #071e57;
   }
   .technology {
@@ -1284,17 +1298,14 @@ h4 {
     margin-bottom: 35px;
   }
   .video {
-    left: 5%;
-    top: -60px;
-
-    width: 90%;
-    height: 430px;
-
+    top: -244px;
+    width: 429px;
+    height: 270px;
     border-radius: 20px;
-    border: 3px solid #071e57;
+    border: 5px solid #071e57;
   }
   .video-section {
-    min-height: 600px;
+    min-height: 485px;
   }
   .technology {
     flex-direction: column-reverse;
@@ -1376,11 +1387,11 @@ h4 {
     width: 90%;
   }
   .video {
-    left: 2%;
-    top: -50px;
+    /* left: 2%; */
+    top: -265px;
 
-    width: 95%;
-    height: 360px;
+    width: 320px;
+    height: 236px;
 
     border-radius: 20px;
     border: 3px solid #071e57;
@@ -1436,6 +1447,8 @@ h4 {
     top: -125px;
     width: 1250px;
   }
+  
+  
   .video-section {
     min-height: 555px;
   }
