@@ -1126,7 +1126,7 @@ h4 {
     align-items: center;
     flex-direction: column;
 
-    margin: auto;
+    margin: 150px auto;
   }
   .product__container {
     display: flex;
@@ -1170,7 +1170,7 @@ h4 {
   .video-section__text-container {
     margin: auto;
     padding: 0 30px;
-    margin-bottom: 78px;
+    margin-bottom: 40px;
   }
   .video {
     /* left: 10%; */
