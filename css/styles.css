@@ -1479,6 +1479,11 @@ h4 {
     display: none;
   }
   .social-links__mobile {
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    left: -1px;
+
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -1491,6 +1496,9 @@ h4 {
 
 @media (min-width: 1024px) {
   .menu-toggle {
+    display: none;
+  }
+  .social-links__mobile {
     display: none;
   }
 
