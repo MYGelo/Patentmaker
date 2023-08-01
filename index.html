@@ -15,104 +15,126 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="social-links">
-        <ul class="social-links__container">
-          <li class="social-links__item">
-            <a style="display: flex" target="_blank" rel="nofollow" href="https://ua.linkedin.com/">
-              <svg style="width: 16px; height: 15px">
-                <use href="./images/symbol-defs.svg#icon-in"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-links__item">
-            <a
-              style="display: flex"
-              target="_blank"
-              rel="nofollow"
-              href="https://www.facebook.com/"
-            >
-              <svg style="width: 8px; height: 15px">
-                <use href="./images/symbol-defs.svg#icon-facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-links__item">
-            <a style="display: flex" target="_blank" rel="nofollow" href="https://twitter.com/">
-              <svg style="width: 16px; height: 13px">
-                <use href="./images/symbol-defs.svg#icon-twitter"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+    <header
+      style="
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 0px;
+        left: 0px;
+        width: 100vw;
+        z-index: 5;
+      "
+    >
+      <div class="container" style="width: 100%;">
+        <div class="social-links">
+          <ul class="social-links__container">
+            <li class="social-links__item">
+              <a
+                style="display: flex"
+                target="_blank"
+                rel="nofollow"
+                href="https://ua.linkedin.com/"
+              >
+                <svg style="width: 16px; height: 15px">
+                  <use href="./images/symbol-defs.svg#icon-in"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-links__item">
+              <a
+                style="display: flex"
+                target="_blank"
+                rel="nofollow"
+                href="https://www.facebook.com/"
+              >
+                <svg style="width: 8px; height: 15px">
+                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-links__item">
+              <a style="display: flex" target="_blank" rel="nofollow" href="https://twitter.com/">
+                <svg style="width: 16px; height: 13px">
+                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
 
-        <a class="social-links__telephone" href="tel:+491788811388">
-          <svg style="width: 14px; height: 14px">
-            <use href="./images/symbol-defs.svg#icon-phone"></use>
-          </svg>
-          <span style="margin-left: 6px">+49 1788811388</span>
-        </a>
+          <a class="social-links__telephone" href="tel:+491788811388">
+            <svg style="width: 14px; height: 14px">
+              <use href="./images/symbol-defs.svg#icon-phone"></use>
+            </svg>
+            <span style="margin-left: 6px">+49 1788811388</span>
+          </a>
 
-        <button class="social-links__btn" type="button">
-          EN
-          <svg style="width: 14px; height: 14px; margin-left: 8px">
-            <use href="./images/symbol-defs.svg#icon-Vector-3"></use>
-          </svg>
-        </button>
-      </div>
+          <button class="social-links__btn" type="button">
+            EN
+            <svg style="width: 14px; height: 14px; margin-left: 8px">
+              <use href="./images/symbol-defs.svg#icon-Vector-3"></use>
+            </svg>
+          </button>
+        </div>
 
-      <nav class="nav-links">
-        <a href="./index.html">
-          <svg style="margin-right: 40px"><use href="./images/symbol-defs.svg#logo" /></svg>
-        </a>
+        <nav class="nav-links">
+          <a href="./index.html">
+            <svg style="margin-right: 40px"><use href="./images/symbol-defs.svg#logo" /></svg>
+          </a>
 
-        <ul class="menu">
-          <li class="nav-links__items">
-            <a class="link nav-links__items__link" href="./index.html">Product</a>
-          </li>
-          <li class="nav-links__items">
-            <a class="link nav-links__items__link" href="./index.html">Firm</a>
-          </li>
-          <li class="nav-links__items">
-            <a class="link nav-links__items__link" href="./index.html">Pricing</a>
-          </li>
-          <li class="nav-links__items">
-            <a class="link nav-links__items__link" href="./index.html">Resources</a>
-          </li>
-          <li class="nav-links__items">
-            <a class="link nav-links__items__link" href="./index.html">Support</a>
-          </li>
-          <li class="nav-links__items">
-            <a class="link nav-links__items__link" href="./index.html">Contact</a>
-          </li>
-        </ul>
-        <button class="btn btn__header button__primery" type="button">free trial</button>
-        <button class="nav-links__items__btn" style="margin: 0px 18px 0px 30px" type="button">
-          <svg style="width: 26px; height: 26px">
-            <use href="./images/symbol-defs.svg#icon-Frame-3"></use>
-          </svg>
-        </button>
-        <button class="nav-links__items__btn" type="button">
-          <svg style="width: 26px; height: 26px; margin-right: 18px">
-            <use href="./images/symbol-defs.svg#icon-man"></use>
-          </svg>
-        </button>
-        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-          <svg
-            width="40"
-            height="40"
-            fill="#57a6eb"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
+          <ul class="menu">
+            <li class="nav-links__items">
+              <a class="link nav-links__items__link" href="./index.html">Product</a>
+            </li>
+            <li class="nav-links__items">
+              <a class="link nav-links__items__link" href="./index.html">Firm</a>
+            </li>
+            <li class="nav-links__items">
+              <a class="link nav-links__items__link" href="./index.html">Pricing</a>
+            </li>
+            <li class="nav-links__items">
+              <a class="link nav-links__items__link" href="./index.html">Resources</a>
+            </li>
+            <li class="nav-links__items">
+              <a class="link nav-links__items__link" href="./index.html">Support</a>
+            </li>
+            <li class="nav-links__items">
+              <a class="link nav-links__items__link" href="./index.html">Contact</a>
+            </li>
+          </ul>
+          <button class="btn btn__header button__primery" type="button">free trial</button>
+          <button class="nav-links__items__btn" style="margin: 0px 18px 0px 30px" type="button">
+            <svg style="width: 26px; height: 26px">
+              <use href="./images/symbol-defs.svg#icon-Frame-3"></use>
+            </svg>
+          </button>
+          <button class="nav-links__items__btn" type="button">
+            <svg style="width: 26px; height: 26px; margin-right: 18px">
+              <use href="./images/symbol-defs.svg#icon-man"></use>
+            </svg>
+          </button>
+          <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
           >
-            <path
-              fill-rule="evenodd"
-              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-              clip-rule="evenodd"
-            ></path>
-          </svg>
-        </button>
-      </nav>
+            <svg
+              width="40"
+              height="40"
+              fill="#57a6eb"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+        </nav>
+      </div>
     </header>
 
     <main>
@@ -195,7 +217,7 @@
 
         <section class="assistant">
           <div class="container">
-            <svg style="width: 1920px; height: 157px; position: absolute; top: -155px">
+            <svg class="assistant__bg-decor">
               <use href="./images/symbol-defs.svg#icon-Rectangle-2011"></use>
             </svg>
 
@@ -280,26 +302,9 @@
                     <use href="./images/symbol-defs.svg#icon-Frame-8"></use>
                   </svg>
                 </div>
-                <div style="position: relative; display: flex; align-items: center">
-                  <image
-                    class="assistant__img"
-                    src="./images/35316ece1f6aeceec1abdc6880386d70.gif"
-                    alt="alt"
-                  />
-                  <div
-                    style="
-                      width: 175px;
-                      height: 175px;
-                      border-radius: 50%;
-                      background-color: white;
-                      display: flex;
-                      align-items: center;
-                      justify-content: center;
-                      position: absolute;
-
-                      left: 110px;
-                    "
-                  >
+                <div class="assistant__img-conainer">
+                  <img class="assistant__img" />
+                  <div class="assistant__svg-label">
                     <svg style="width: 110px; height: 53px">
                       <use href="./images/symbol-defs.svg#icon-Frame-10"></use>
                     </svg>
@@ -354,12 +359,12 @@
               meet our product
             </button>
           </div>
-          <div style="max-width: 506px; max-height: 552px">
+          <div class="product__img-container">
             <image class="Efficiency-info__img" src="./images/Rectangle.png" alt="alt" />
           </div>
         </section>
 
-        <section class="video-section">
+        <section class="container video-section">
           <video
             poster="./images/b09b4d0023cb2a4a3a56b508b2400d93.jpg"
             controls
