@@ -253,7 +253,8 @@ h4 {
   /* width: 1920px; */
   flex-shrink: 0;
 
-  /* background-color: var(--primery-grey-color); */
+  background: linear-gradient(0deg, rgba(15, 14, 46, 0.77) 0%, rgba(15, 14, 46, 0.77) 100%),
+    lightgray 50%;
 }
 .nav-links__container {
   display: flex;
@@ -564,6 +565,7 @@ h4 {
   height: 157px;
   position: absolute;
   top: -155px;
+  left: 0;
 }
 .assistant__svg-label {
   width: 175px;
@@ -839,7 +841,6 @@ h4 {
 .contactUs__input::placeholder {
   color: #fff;
 }
-
 
 .contactUs__label-container {
   position: relative;
@@ -1259,7 +1260,6 @@ h4 {
     margin: 10px auto 0 auto;
   }
   .contactUs {
-  
   }
 
   .contactUs__form {
@@ -1361,8 +1361,8 @@ h4 {
     max-width: 100%;
     /* padding: 15px; */
   }
-  .contactUs__label{
-  width: 100%;
+  .contactUs__label {
+    width: 100%;
   }
 }
 
