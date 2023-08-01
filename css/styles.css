@@ -794,6 +794,7 @@ h4 {
   left: 45%;
 }
 .contactUs__container {
+  z-index: 1;
   max-width: 666px;
   padding: 15px;
 }
@@ -831,6 +832,8 @@ h4 {
   border: 1px solid transparent;
   border-bottom: 1px solid #fff;
 }
+
+
 .contactUs__input:hover,
 .contactUs__input:focus,
 .contactUs__input:focus-within,
@@ -857,6 +860,7 @@ h4 {
   flex-shrink: 0;
 
   margin: 0 auto;
+  /* padding: 0px 15px; */
 
   background: #262626;
 }
@@ -1045,7 +1049,7 @@ h4 {
 
   margin: 50px auto 20px auto;
   padding: 0;
-  margin: 0;
+
   list-style: none;
 
   /* text-align: center; */
@@ -1141,17 +1145,17 @@ h4 {
   .footer__resources {
     margin: 0 auto;
     text-align: start;
-   
+
     margin-top: 25px;
   }
   .footer__product {
-    margin:  auto;
+    margin: auto;
     text-align: start;
   }
   .footer__title {
     margin: 15px auto;
   }
-  .footef__list{
+  .footef__list {
     flex-direction: column;
     margin: auto;
   }
@@ -1472,6 +1476,9 @@ h4 {
   }
   .partners__container {
     margin: 30px auto;
+  }
+  .assistant__svg-label {
+    left: 28%;
   }
 }
 
