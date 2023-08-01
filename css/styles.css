@@ -1473,6 +1473,19 @@ h4 {
   }
   .nav-links {
     justify-content: space-around;
+    height: 45px;
+  }
+  .social-links {
+    display: none;
+  }
+  .social-links__mobile {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /* margin: auto; */
+    /* max-width: 1920px; */
+    height: 40px;
+    background: linear-gradient(270deg, #24469e 0%, #3e82be 100%);
   }
 }
 
@@ -1480,4 +1493,5 @@ h4 {
   .menu-toggle {
     display: none;
   }
+
 }
