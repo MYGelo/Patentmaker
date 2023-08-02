@@ -273,17 +273,18 @@ h4 {
 }
 
 .Efficiency-section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   margin: 40px auto 0px auto;
   padding: 15px;
 
   /* width: 1920px; */
   /* height: 780px; */
   background-image: url('../images/Rectangle\ 3.png');
-  position: relative;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-size: cover;
 }
 /* .Efficiency-section::after{
   content: ;
