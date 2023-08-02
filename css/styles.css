@@ -955,7 +955,7 @@ h4 {
 }
 .footer__nav {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   position: relative;
   max-width: 1200px;
   margin: 0 auto;
@@ -1018,14 +1018,15 @@ h4 {
 }
 
 .footer__menu {
-  margin: 0px 0px 0px 213px;
+  margin: 0px 0px 0px auto;
 }
 
 .footer__resources {
-  margin: 0px 0px 0px 95px;
+  margin: 0px 0px 0px 111px;
 }
 .footer__product {
-  margin: 0px 0px 0px 75px;
+  margin: 0px;
+  padding-right: 15px;
 }
 
 .footer__under {
@@ -1034,6 +1035,7 @@ h4 {
   justify-content: space-between;
 
   margin: 76px auto 0 auto;
+  padding: 0px 15px;
 
   max-width: 1200px;
 
