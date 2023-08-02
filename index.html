@@ -69,7 +69,7 @@
 
         <nav class="nav-links">
           <a href="./index.html">
-            <svg style="width: 95%"><use href="./images/symbol-defs.svg#logo" /></svg>
+            <svg class="header__logo"><use href="./images/symbol-defs.svg#logo" /></svg>
           </a>
 
           <ul class="menu">
@@ -93,16 +93,18 @@
             </li>
           </ul>
           <button class="btn btn__header button__primery" type="button">free trial</button>
-          <button class="nav-links__items__btn" style="margin: 0px 18px 0px 30px" type="button">
+
+          <!-- <button class="nav-links__items__btn" type="button">
+            <svg style="width: 26px; height: 26px; margin-right: 18px">
+              <use href="./images/symbol-defs.svg#icon-man"></use>
+            </svg>
+          </button> -->
+          <button class="nav-links__items__btn" type="button">
             <svg style="width: 26px; height: 26px">
               <use href="./images/symbol-defs.svg#icon-Frame-3"></use>
             </svg>
           </button>
-          <button class="nav-links__items__btn" type="button">
-            <svg style="width: 26px; height: 26px; margin-right: 18px">
-              <use href="./images/symbol-defs.svg#icon-man"></use>
-            </svg>
-          </button>
+
           <button
             class="menu-toggle js-open-menu"
             aria-expanded="false"
@@ -354,7 +356,7 @@
           </div>
         </section>
         <section class="video-section">
-          <div style="position: absolute; left: 50%">
+          <div class="video__container">
             <video
               poster="./images/b09b4d0023cb2a4a3a56b508b2400d93.jpg"
               controls
@@ -531,7 +533,7 @@
     <footer class="container footer">
       <section class="footer__nav">
         <div class="footer__social-links">
-          <svg>
+          <svg class="footer__svg">
             <use href="./images/symbol-defs.svg#icon-Frame-12"></use>
           </svg>
           <ul class="social-links__container">
@@ -590,11 +592,10 @@
             <li><p class="footer__text">Demo</p></li>
             <li><p class="footer__text">Blog</p></li>
             <li><p class="footer__text">Community</p></li>
-            <li><p class="footer__text">Connection to patent offices</p></li>
           </ul>
         </div>
         <div class="footer__product">
-          <h3 class="footer__title">Product</h3>
+          <p class="footer__title" style="margin-left: 15px">Product</p>
           <button class="btn button__tertiary button__tertiary__footer">
             Free trail
             <span class="Efficiency-section__vektor">
@@ -640,7 +641,7 @@
           ></path>
         </svg>
       </button>
-      <svg style="margin-right: 40px; position: absolute; width: 30%; top: -40px; left: 15px">
+      <svg style="position: absolute; width: 30%; height: 40px; top: 5px; left: 15px">
         <use href="./images/symbol-defs.svg#logo" />
       </svg>
 
@@ -665,13 +666,7 @@
         </li>
       </ul>
 
-      <div class="mobile-menu__btn-container">
-        <button class="mobile-menu__btn" style="margin-right: 30px" type="button">
-          <svg style="width: 26px; height: 26px">
-            <use href="./images/symbol-defs.svg#icon-Frame-3"></use>
-          </svg>
-        </button>
-
+      <!-- <div class="mobile-menu__btn-container">
         <button class="btn button__primery" type="button">
           free trial
           <span class="Efficiency-section__vektor">
@@ -686,7 +681,7 @@
             <use href="./images/symbol-defs.svg#icon-man"></use>
           </svg>
         </button>
-      </div>
+      </div> -->
 
       <div class="social-links__mobile">
         <ul class="social-links__container">
