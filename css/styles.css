@@ -1130,12 +1130,12 @@ h4 {
   background-size: cover;
   z-index: 999;
 
-  transform: translateY(-300%);
-  transition: transform 250ms ease-in-out;
+  transform: translate(-300%, 50px);
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-container.is-open {
-  transform: translateY(0);
+  transform: translate(0px, 50px);
 }
 
 .menu-container .menu-toggle {
@@ -1151,13 +1151,14 @@ h4 {
   justify-content: center;
   flex-wrap: wrap;
 
-  margin: 50px auto 20px auto;
-  padding: 0;
+  margin: auto;
+  padding: 0 0 10px 0 ;
 
   list-style: none;
 
   flex-direction: column;
 }
+
 
 .mobile-menu .link {
   display: block;
@@ -1166,6 +1167,7 @@ h4 {
   text-decoration: none;
   font-size: 16px;
 }
+
 .mobile-menu .link:hover,
 .mobile-menu .link:focus {
   color: #3e82be;
