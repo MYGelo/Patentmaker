@@ -1748,9 +1748,9 @@ h4 {
     font-size: 12px;
   }
   .searchMenu.is-open {
-    bottom: 10px;
+    bottom: 5px;
     right: -55px;
-    height: 33px;
+    height: 40px;
     left: unset;
     position: absolute;
   }
