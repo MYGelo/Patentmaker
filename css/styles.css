@@ -131,7 +131,7 @@ h4 {
 }
 
 .footer__btn__second {
-  margin-top: 23px;
+  margin: 23px 0px;
 }
 
 .btn__second__vector {
@@ -968,9 +968,9 @@ h4 {
   position: absolute;
   content: '';
 
-  width: 95%;
+  width: 100%;
   height: 1px;
-  bottom: -30%;
+  bottom: -25%;
 
   background: rgba(255, 255, 255, 0.1);
 }
@@ -1011,7 +1011,7 @@ h4 {
 }
 
 .footer__mail {
-  margin-top: 20px;
+  margin: 20px 0px;
   color: #fff;
 
   font-size: 18px;
@@ -1038,7 +1038,7 @@ h4 {
   align-items: center;
   justify-content: space-between;
 
-  margin: 76px auto 0 auto;
+  margin: 76px auto 10px auto;
   padding: 0px 15px;
 
   max-width: 1200px;
@@ -1191,6 +1191,9 @@ h4 {
   .header__logo {
     width: 50%;
   }
+  .Efficiency-info {
+    margin-top: 10%;
+  }
   .assistant__img-conainer {
     width: 100%;
   }
@@ -1314,7 +1317,8 @@ h4 {
   }
 
   .technology {
-    margin: 50px 0px 100px 0px;
+    flex-direction: column-reverse;
+    margin: 50px 0px 70px 0px;
   }
   .product__label,
   .assistant__label,
@@ -1338,6 +1342,7 @@ h4 {
     margin: 0 0 20px 0;
   }
   .technology__img-container {
+    margin: 10px auto 0 auto;
     max-width: 473px;
   }
 
@@ -1355,7 +1360,7 @@ h4 {
     flex-direction: column;
   }
   .Efficiency-section__container {
-    margin-top: 150px;
+    margin-top: 10%;
     text-align: center;
   }
   .Efficiency-section__btn {
@@ -1396,6 +1401,7 @@ h4 {
   .container {
     max-width: 768px;
   }
+
   .footef__list {
     flex-direction: column;
     margin: auto;
@@ -1427,7 +1433,7 @@ h4 {
     flex-direction: column;
     align-items: center;
 
-    margin: 10px auto 0 auto;
+    margin: 20px auto;
   }
   .contactUs {
   }
@@ -1508,8 +1514,8 @@ h4 {
     margin-bottom: 10px;
   }
   .technology__img-container {
-    max-width: 768px;
-    width: 100%;
+    /* max-width: 768px;
+    width: 100%; */
   }
   .technology__container {
     margin: 0px auto;
@@ -1559,6 +1565,9 @@ h4 {
   }
   .footer__svg {
     width: 100%;
+  }
+  .footer__title {
+    margin-top: 20%;
   }
 }
 
@@ -1658,9 +1667,6 @@ h4 {
   }
   .footer__social-links {
     margin-left: 0px;
-  }
-  .footer__title {
-    margin-top: 15px;
   }
 }
 
