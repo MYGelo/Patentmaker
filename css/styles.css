@@ -1152,13 +1152,12 @@ h4 {
   flex-wrap: wrap;
 
   margin: auto;
-  padding: 0 0 10px 0 ;
+  padding: 0 0 10px 0;
 
   list-style: none;
 
   flex-direction: column;
 }
-
 
 .mobile-menu .link {
   display: block;
@@ -1269,6 +1268,8 @@ h4 {
 
   .footer__svg {
     width: 250px;
+    height: 34px;
+    margin: 55px 0px ;
   }
 
   .contactUs {
