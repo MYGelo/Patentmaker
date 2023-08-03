@@ -1186,6 +1186,20 @@ h4 {
   display: flex;
   justify-content: center;
 }
+.searchMenu {
+  display: none;
+}
+.searchMenu.is-open {
+  position: absolute;
+
+  bottom: -41px;
+  height: 30px;
+  width: 333px;
+  display: flex;
+}
+.searchMenu__btn {
+  font-size: 13px;
+}
 /* =========== */
 @media screen and (max-width: 1240px) {
   .header__logo {
@@ -1732,6 +1746,23 @@ h4 {
     width: 105px;
     height: 30px;
     font-size: 12px;
+  }
+  .searchMenu.is-open {
+    bottom: 10px;
+    right: -55px;
+    height: 33px;
+    left: unset;
+    position: absolute;
+  }
+  .searchMenu__btn {
+    position: absolute !important;
+    top: 0px;
+    left: 185px;
+    width: 35px;
+    height: 33px;
+
+    opacity: 0;
+    z-index: 4;
   }
 }
 

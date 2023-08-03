@@ -92,14 +92,30 @@
               <a class="link nav-links__items__link" href="./index.html">Contact</a>
             </li>
           </ul>
+
           <button class="btn btn__header button__primery" type="button">free trial</button>
 
-          <!-- <button class="nav-links__items__btn" type="button">
-            <svg style="width: 26px; height: 26px; margin-right: 18px">
-              <use href="./images/symbol-defs.svg#icon-man"></use>
-            </svg>
-          </button> -->
-          <button class="nav-links__items__btn" type="button">
+          <form class="searchMenu" class="search-post" name="searchPost" id="searchMenu">
+            <input
+              class="search-field"
+              type="text"
+              placeholder="SEARCH..."
+              value=""
+              name="s"
+              id="s"
+            />
+            <button id="searchBtn" type="submit" class="searchMenu__btn button__primery">
+              Search
+            </button>
+          </form>
+
+          <button
+            class="nav-links__items__btn"
+            type="button"
+            id="searchGlass"
+            aria-expanded="false"
+            aria-controls="searchMenu"
+          >
             <svg style="width: 26px; height: 26px">
               <use href="./images/symbol-defs.svg#icon-Frame-3"></use>
             </svg>
@@ -641,9 +657,6 @@
           ></path>
         </svg>
       </button>
-      <!-- <svg style="position: absolute; width: 30%; height: 40px; top: 5px; left: 15px">
-        <use href="./images/symbol-defs.svg#logo" />
-      </svg> -->
 
       <ul class="mobile-menu">
         <li class="nav-links__items">
@@ -665,23 +678,6 @@
           <a class="link nav-links__items__link" href="./index.html">Contact</a>
         </li>
       </ul>
-
-      <!-- <div class="mobile-menu__btn-container">
-        <button class="btn button__primery" type="button">
-          free trial
-          <span class="Efficiency-section__vektor">
-            <svg style="width: 16.34px; height: 14.4px">
-              <use href="./images/symbol-defs.svg#icon-arrow"></use>
-            </svg>
-          </span>
-        </button>
-
-        <button class="mobile-menu__btn" type="button">
-          <svg style="width: 26px; height: 26px; margin: 0 30px">
-            <use href="./images/symbol-defs.svg#icon-man"></use>
-          </svg>
-        </button>
-      </div> -->
 
       <div class="social-links__mobile">
         <ul class="social-links__container">
@@ -729,7 +725,6 @@
       </div>
     </div>
 
-    <!-- <script src="./js/langue.js" type="module" defer></script> -->
     <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
