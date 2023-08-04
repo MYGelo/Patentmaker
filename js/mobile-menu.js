@@ -4,25 +4,34 @@
   const closeMenuBtn = document.querySelector('.js-close-menu');
 
   const searchGlass = document.querySelector('#searchGlass');
+
   const searchMenu = document.querySelector('.searchMenu');
-  const searchBtn = document.querySelector('#searchBtn');
 
   const searchGlassMenu = () => {
-    console.log('click search');
-
-    const isMenuOpen = searchGlass.getAttribute('aria-expanded') === 'true' || false;
-    searchGlass.setAttribute('aria-expanded', !isMenuOpen);
-
     searchMenu.classList.toggle('is-open');
-  };
 
-  const searchBtnPress = () => {
-    console.log(`srearch BTN`);
-    searchGlassMenu();
+    searchMenu.addEventListener('submit', e => {
+      e.preventDefault();
+      const {
+        elements: { search },
+      } = e.currentTarget;
+
+      if (search.value === '') {
+        searchMenu.classList.remove('is-open');
+        console.log(`nothing entered in search`);
+        // alert(`nothing entered in search`);
+        e.target.reset();
+      } else {
+        console.log(search.value);
+        // alert(`search :  ${search.value} `);
+        searchMenu.classList.remove('is-open');
+        e.target.reset();
+      }
+      searchMenu.removeEventListener('submit', e);
+    });
   };
 
   searchGlass.addEventListener('click', searchGlassMenu);
-  searchBtn.addEventListener('click', searchBtnPress);
 
   const toggleMenu = () => {
     const isMenuOpen = openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
