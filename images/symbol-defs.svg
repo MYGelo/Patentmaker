@@ -78,7 +78,7 @@
 </symbol>
 
 <symbol id="icon-Rectangle-2011" viewBox="0 0 391 32">
-<path fill="#f6f8fa" style="fill: var(--color1, #f6f8fa)" d="M391.338 32l-391.338-32v32h391.338z"></path>
+<path fill="red" style="fill: var(--color1, #f6f8fa)" d="M391.338 32l-391.338-32v32h391.338z"></path>
 </symbol>
 
 <symbol id="icon-Frame-8" viewBox="0 0 44 32">

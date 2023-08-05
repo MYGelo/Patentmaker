@@ -9,8 +9,8 @@
 
   /* width: 1920px; */
   /* height: 780px; */
-  background-image: url('../images/Rectangle\ 3.png');
-  background-size: cover;
+  /* background-image: url('../images/Rectangle\ 3.png');
+  background-size: cover; */
 }
 .Efficiency-section__bg {
   position: relative;
@@ -18,7 +18,7 @@
   background-image: url('../images/Rectangle\ 3.png');
   background-size: cover;
 }
- /* .Efficiency-section::after{
+/* .Efficiency-section::after{
     content: ;
   } */
 
@@ -73,20 +73,19 @@
   z-index: 1;
   position: relative;
 
-  margin-left: 77px;
-  margin-top: 218px;
+  margin: 218px 0px 50px 77px;
   max-width: 506px;
   max-height: 552px;
   flex-shrink: 0;
 
-  background-color: rgba(60, 68, 96, 0.9);
+  /* background-color: rgba(60, 68, 96, 0.9); */
 }
 .Efficiency-info__img {
   width: 100%;
   height: 100%;
   background: linear-gradient(165deg, rgba(164, 151, 249, 0) 28.67%, rgba(164, 151, 249, 0.5) 100%),
     url(../images/Rectangle.png), lightgray -1.978px 0px / 183.971% 100% no-repeat;
-  box-shadow: -15px 30px 40px 0px rgba(60, 68, 96, 0.15);
+  /* box-shadow: -15px 30px 40px 0px rgba(60, 68, 96, 0.15); */
   background-size: cover;
 }
 
@@ -154,7 +153,6 @@
   .Efficiency-section__text {
     font-size: 19px;
   }
-
 }
 @media screen and (max-width: 1024px) {
   .Efficiency-section {
@@ -168,10 +166,8 @@
     margin: 30px auto;
   }
   .Efficiency-info {
-    margin: 55px 55px 0px 55px;
+    margin: 55px 55px 85px 55px;
   }
- 
-  
 }
 
 @media screen and (max-width: 768px) {
@@ -180,6 +176,9 @@
   }
   .Efficiency-section__text {
     font-size: 17px;
+  }
+  .Efficiency-info {
+    margin: 55px;
   }
 }
 
@@ -192,6 +191,9 @@
   }
   .Efficiency-section__text {
     font-size: 15px;
+  }
+  .Efficiency-info {
+    margin: 15px 15px 35px 15px;
   }
 }
 

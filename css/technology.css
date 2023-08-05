@@ -1,7 +1,7 @@
 .technology {
   display: flex;
   justify-content: center;
-  /* padding: 15px; */
+  padding: 15px;
   margin: 111.5px auto 260px auto;
 }
 .technology__container {

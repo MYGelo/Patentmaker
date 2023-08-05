@@ -10,6 +10,16 @@
   background: #f6f8fa;
   position: relative;
 }
+.assi{ 
+  width: 100%;
+}
+
+.assi::before {
+  position: absolute;
+  content: url(../images/Rectangle\ 20.svg);
+  width: 100%;
+
+}
 .assistant__container {
   max-width: 1199px;
   padding: 15px;
@@ -194,27 +204,27 @@
   .assistant__text {
     font-size: 13px;
   }
-    .assistant__svg-label {
+  .assistant__svg-label {
     left: 40%;
   }
 }
 
 @media screen and (max-width: 768px) {
-    .assistant__list {
-        justify-content: center;
-        margin: 50px auto;
-      }
-      .assistant__svg-label {
-        left: 36%;
-      }
-      .assistant__btn-container {
-        justify-content: space-around;
-        margin: 30px 0px 13px 0px;
-      }
+  .assistant__list {
+    justify-content: center;
+    margin: 50px auto;
+  }
+  .assistant__svg-label {
+    left: 36%;
+  }
+  .assistant__btn-container {
+    justify-content: space-around;
+    margin: 30px 0px 13px 0px;
+  }
 }
 
 @media screen and (max-width: 479px) {
-     .assistant__list {
+  .assistant__list {
     max-width: 300px;
   }
   .assistant__item {
@@ -229,14 +239,13 @@
     font-size: 30px;
     margin: 0px 0px 20px 0px;
   }
-    .assistant__bg-decor {
+  .assistant__bg-decor {
     top: -125px;
     width: 1250px;
   }
-    .assistant__svg-label {
+  .assistant__svg-label {
     left: 28%;
   }
-
 }
 
 /* ////////////////////////////////////////////////////////////////////
@@ -246,15 +255,15 @@
 }
 
 @media screen and (min-width: 1024px) {
-    .assistant__list-container {
-        position: relative;
-        z-index: 1;
-      }
-      .assistant__list-container::after {
-        content: url(../images/Frame.png);
-        position: absolute;
-        left: -17%;
-        top: 22%;
-        z-index: -1;
-      }
+  .assistant__list-container {
+    position: relative;
+    z-index: 1;
+  }
+  .assistant__list-container::after {
+    content: url(../images/Frame.png);
+    position: absolute;
+    left: -17%;
+    top: 22%;
+    z-index: -1;
+  }
 }
