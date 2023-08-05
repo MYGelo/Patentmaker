@@ -1,0 +1,243 @@
+.video-section {
+    position: relative;
+  
+    display: flex;
+    align-items: flex-end;
+    /* justify-content: center; */
+  
+    margin: 0 auto;
+    max-width: 1345px;
+    /* min-height: 656px; */
+    flex-shrink: 0;
+  
+    background: linear-gradient(0deg, #3e82be 0%, #3e82be 100%), url(../images/Rectangle\ 95.png),
+      lightgray -36.892px -1293.485px / 139.63% 308.148% no-repeat;
+  }
+  
+  .video {
+    display: block;
+    width: 98%;
+    height: 100%;
+    border-radius: 25px;
+    border: 10px solid #071e57;
+    box-shadow: -15px 30px 40px rgb(60 68 96 / 15%);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.06));
+  }
+  .video__container {
+    max-width: 780px;
+    max-height: 462px;
+    width: 90%;
+    position: absolute;
+    top: -72px;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  .video-section__text-container {
+    padding: 403px 15px 15px;
+    max-width: 937px;
+    margin: auto auto 78px auto;
+  }
+  .video-section__title {
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+  }
+  .video-section__text {
+    color: #fff;
+  
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 25.6px */
+  }
+  .video__svg-1 {
+    width: 385px;
+    height: 385px;
+    position: absolute;
+    left: -230px;
+    bottom: -158px;
+  }
+  .video__svg-2 {
+    width: 275px;
+    height: 275px;
+    position: absolute;
+    right: 95px;
+    bottom: -83px;
+    opacity: 0.3;
+  }
+  .video__svg-3 {
+    width: 185px;
+    height: 185px;
+    position: absolute;
+    left: 584px;
+    bottom: 35px;
+    opacity: 0.3;
+  }
+  .video__svg-4 {
+    width: 275px;
+    height: 275px;
+    position: absolute;
+    left: 269px;
+    bottom: 42px;
+    opacity: 0.3;
+  }
+  .video__svg-5 {
+    width: 200px;
+    height: 104px;
+    position: absolute;
+    left: 3%;
+    top: 17%;
+    opacity: 0.4;
+  }
+  
+  .video__svg-6 {
+    width: 385px;
+    height: 385px;
+    position: absolute;
+    right: -16%;
+    bottom: 27%;
+    opacity: 0.3;
+  }
+  .video__svg-7 {
+    width: 185px;
+    height: 100px;
+    position: absolute;
+    right: 16%;
+    bottom: 27%;
+    opacity: 0.3;
+  }
+  .video__svg-8 {
+    width: 185px;
+    height: 100px;
+    position: absolute;
+    right: 14%;
+    bottom: 58%;
+    opacity: 0.3;
+  }
+  .video__svg-9 {
+    width: 185px;
+    height: 100px;
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    opacity: 0.3;
+  }
+  
+@media screen and (max-width: 1240px) {
+
+  
+}
+@media screen and (max-width: 1024px) {
+    .video-section__text-container {
+        margin: auto;
+        padding: 55% 15px 15px;
+        margin-bottom: 40px;
+      }
+    
+      .video-section {
+        /* margin: 76px auto 0 auto; */
+        /* min-height: 600px; */
+      }
+
+      .video-section__text{
+        font-size: 13px;
+      }
+    
+      .video__svg-2 {
+        right: -10%;
+        bottom: -10%;
+      }
+      .video__svg-3 {
+        left: 58%;
+      }
+    
+      .video__svg-4 {
+        left: 27%;
+      }
+    
+      .video__svg-7 {
+        display: none;
+      }
+      .video__svg-8 {
+        display: none;
+      }
+
+
+}
+
+@media screen and (max-width: 768px) {
+    .video-section__text-container {
+        margin: auto;
+        margin-bottom: 35px;
+      }
+      /* .video {
+        top: -244px;
+        width: 429px;
+        height: 270px;
+        border-radius: 20px;
+        border: 5px solid #071e57;
+      } */
+      .video-section {
+        /* min-height: 555px; */
+      }
+    
+      .video__svg-2 {
+        opacity: 0.2;
+      }
+      .video__svg-3 {
+        display: none;
+      }
+    
+      .video__svg-4 {
+        display: none;
+      }
+      .video__svg-6 {
+        opacity: 0.1;
+      }
+    
+      .video__svg-7 {
+        display: block;
+        right: 36%;
+      }
+      .video__svg-8 {
+        display: none;
+      }
+    
+}
+
+@media screen and (max-width: 479px) {
+
+/* .video {
+
+    top: -265px;
+
+    width: 320px;
+    height: 236px;
+
+    border-radius: 20px;
+    border: 3px solid #071e57;
+  } */
+
+  .video-section {
+    /* min-height: 450px; */
+  }
+  .video__svg-2 {
+    right: -36%;
+  }
+  .video__svg-4 {
+    display: none;
+  }
+
+}
+
+/* ////////////////////////////////////////////////////////////////////
+ */
+
+
+@media (min-width: 1241px) {
+
+}
+
+@media screen and (min-width: 1024px) {
+ 
+}

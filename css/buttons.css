@@ -1,0 +1,235 @@
+@property --myColor1 {
+  syntax: '<color>';
+  initial-value: #ef5559;
+  inherits: false;
+}
+@property --myColor2 {
+  syntax: '<color>';
+  initial-value: #3e82be;
+  inherits: false;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-shrink: 0;
+
+  cursor: pointer;
+
+  width: 222px;
+  height: 60px;
+}
+.button__primery {
+  border: 0px solid transparent;
+
+  color: #fff;
+
+  background: linear-gradient(270deg, var(--myColor1), var(--myColor2));
+  transition: --myColor1 500ms, --myColor2 500ms;
+
+  text-transform: uppercase;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%; /* 25.6px */
+}
+.button__primery:hover,
+.button__primery:focus {
+  --myColor1: #3e82be;
+  --myColor2: #ef5559;
+}
+.button__secondary {
+  border: 1px solid #ee5559;
+  background-color: #fde6e6;
+  color: #ee5559;
+
+  text-transform: uppercase;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button__secondary:hover,
+.button__secondary:focus {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: #ee555a4c;
+}
+.button__tertiary {
+  background-color: #ee5559;
+  border: 1px solid #ee5559;
+
+  color: #fff;
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%; /* 25.6px */
+  text-transform: uppercase;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button__tertiary:focus,
+.button__tertiary:hover {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: #ee555ac7;
+}
+
+.btn__header {
+  justify-content: center;
+
+  width: 125px;
+  height: 44px;
+
+  margin: 0px 25px;
+}
+
+.assistant__btn {
+}
+.Efficiency-section__btn {
+  width: 259px;
+}
+
+.footer__btn__second {
+  margin: 23px 0px;
+}
+
+.btn__second__vector {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0px 11px 0px 38px;
+  width: 37px;
+  height: 37px;
+  flex-shrink: 0;
+  background: #ee5559;
+  border-radius: 50%;
+}
+.assistant__btn-second {
+  margin-left: 69px;
+}
+
+.product__btn {
+  justify-content: center;
+}
+
+.contactUs__btn {
+  width: 259px;
+  margin: 57px 0 0 0;
+}
+
+.button__tertiary__footer {
+  margin-top: 22px;
+  margin-bottom: 15px;
+
+  border: 1px solid black;
+}
+
+.social-links__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 53px;
+  height: 27px;
+  flex-shrink: 0;
+
+  padding: 3px 8px 5px 8px;
+  margin-right: 360px;
+
+  border-radius: 5px;
+  border: 1px solid transparent;
+  background: #6284bf;
+
+  color: var(--primery-white-color);
+  transition: 500ms;
+}
+
+.nav-links__items__btn {
+  background-color: transparent;
+  border: transparent;
+  transition: 500ms;
+  cursor: pointer;
+}
+.social-links__item:hover,
+.social-links__item:focus,
+.nav-links__items__btn:hover,
+.nav-links__items__btn:focus {
+  transform: scale(1.1);
+  transition: 500ms;
+}
+.mobile-menu__btn {
+  background-color: transparent;
+  border: transparent;
+}
+.searchMenu__btn {
+  height: 33px;
+  width: 33px;
+
+  padding: 7px;
+  margin-left: 5px;
+  border-radius: 50%;
+
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1240px) {
+  .nav-links__items__btn {
+    position: absolute;
+    right: 55px;
+  }
+  .btn__header {
+    position: absolute;
+    right: 129px;
+    width: 105px;
+    height: 30px;
+    font-size: 12px;
+  }
+  .social-links__btn {
+    margin: auto 25px auto 0px;
+    padding: 0;
+    font-size: 10px;
+    width: 45px;
+    height: 20px;
+  }
+  .searchMenu__btn {
+    position: absolute !important;
+    top: 0px;
+    left: 185px;
+    width: 35px;
+    height: 33px;
+
+    opacity: 0;
+    z-index: 4;
+  }
+
+}
+@media screen and (max-width: 1024px) {
+  .Efficiency-section__btn {
+    margin: 30px auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .assistant__btn-second {
+    margin-left: auto;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .btn__header {
+    display: none;
+  }
+  .assistant__btn-second {
+    margin: 0 0 30px 0;
+  }
+
+}
+
+/* ////////////////////////////////////////////////////////////////////
+ */
+
+
+@media (min-width: 1241px) {
+
+}
+
+@media screen and (min-width: 1024px) {
+ 
+}
