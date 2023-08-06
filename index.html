@@ -26,9 +26,9 @@
   </head>
   <body>
     <header class="header">
-      <div class="social-links__bg">
-        <div class="container">
-          <div class="social-links">
+      <div style="width: 100%">
+        <div class="social-links__bg">
+          <div class="container social-links">
             <ul class="social-links__container">
               <li class="social-links__item">
                 <a
@@ -79,10 +79,12 @@
           </div>
         </div>
 
-        <div class="nav-links__bg">
+        <div class="nav-links__bg" id="nav-links__bg">
           <nav class="nav-links">
-            <a href="./index.html">
-              <svg class="header__logo"><use href="./images/symbol-defs.svg#logo" /></svg>
+            <a href="./index.html" class="header__logo">
+              <svg width="100%" height="100%">
+                <use href="./images/symbol-defs.svg#logo" />
+              </svg>
             </a>
 
             <ul class="menu">
@@ -129,7 +131,7 @@
               </svg>
             </button>
 
-            <button
+            <!-- <button
               class="menu-toggle js-open-menu"
               aria-expanded="false"
               aria-controls="mobile-menu"
@@ -147,6 +149,16 @@
                   clip-rule="evenodd"
                 ></path>
               </svg>
+            </button> -->
+            <button
+              class="menu-toggle js-open-menu"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+            >
+              <span class="span q"></span>
+              <span class="span qq"></span>
+              <span class="span qqq"></span>
+              <span class="span qqqq"></span>
             </button>
           </nav>
         </div>
@@ -220,8 +232,8 @@
         </div>
       </section>
 
-      <section>
-        <div class="container">
+      <section class="technology-section">
+        <div class="container" style="overflow: visible">
           <div class="technology">
             <div class="technology__img-container">
               <image class="technology__img" src="./images/man.png" alt="technology" />
@@ -246,55 +258,24 @@
             </div>
           </div>
         </div>
-        <div style="width: 100%">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 157" fill="none">
+        <div style="width: 100%; display: flex">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 157" width="100%" fill="none">
             <path d="M1920 157L0 0V157H1920Z" fill="#F6F8FA" />
           </svg>
         </div>
       </section>
 
-      <!-- <section class="technology container">
-        <div class="technology__img-container">
-          <image class="technology__img" src="./images/man.png" alt="technology" />
-        </div>
-        <div class="technology__container">
-          <span class="technology__label"> technology and internet</span>
-          <h2 class="technology__title">It ends where it starts</h2>
-          <p class="technology__text">
-            The golden time for patent attorneys seems to be long over. It starts from the
-            population of technology and internet, whereby the hard work of patent attorneys was
-            “disadvantaged”, as clients are access to profound information about prosecution
-            proceedings on the internet and demand strong budget cut for works that were used to be
-            billable for the patent attorney. Some of them take over some of the task internally so
-            as to reduce the cost. The dilemmas here is well known: the budget from the clients is
-            tidder and the personal cost of the paralegals are higher and higher. The profit margin
-            drop dramatically! But we can turn this disadvantage into our advantage! With
-            PatentMaker solutions based on AI technology, you can improve your efficiency not only
-            for the work of the patent attorneys, but also greatly simply and shortly the workflows
-            in the secretarial work and hence reduce the personal cost hereof.
-          </p>
-        </div>
-        
-      </section> -->
-
       <section class="assistant">
-        <!-- <svg
-        style="position: absolute; left: 0"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1920 157"
-        fill="none"
-      >
-        <path d="M1920 157L0 0V157H1920Z" fill="#F6F8FA" />
-      </svg> -->
         <div class="container" style="overflow: visible">
-        
           <div class="assistant__container">
-            <span class="assistant__label"> routine automation</span>
-            <h2 class="assistant__title">PatentMaker Digital Assistant</h2>
-            <p class="assistant__text">
-              By automating routine tasks we help patent attorneys and law firms be more productive
-              and efficient. Numerous time-saving functions are just a click away.
-            </p>
+            <div class="assistant__container-text">
+              <span class="assistant__label"> routine automation</span>
+              <h2 class="assistant__title">PatentMaker Digital Assistant</h2>
+              <p class="assistant__text">
+                By automating routine tasks we help patent attorneys and law firms be more
+                productive and efficient. Numerous time-saving functions are just a click away.
+              </p>
+            </div>
             <div class="assistant__list-container">
               <ul class="assistant__list">
                 <li class="assistant__item">
@@ -705,7 +686,7 @@
     </footer>
 
     <div class="menu-container js-menu-container" id="mobile-menu">
-      <button class="menu-toggle js-close-menu">
+      <!-- <button class="menu-toggle js-close-menu">
         <svg
           fill="currentColor"
           viewBox="0 0 20 20"
@@ -719,7 +700,7 @@
             clip-rule="evenodd"
           ></path>
         </svg>
-      </button>
+      </button> -->
 
       <ul class="mobile-menu">
         <li class="nav-links__items">
@@ -789,5 +770,6 @@
     </div>
 
     <script defer src="js/mobile-menu.js"></script>
+    <script defer src="js/header.js"></script>
   </body>
 </html>

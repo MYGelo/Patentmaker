@@ -43,9 +43,6 @@ h4 {
   line-height: 120%; /* 64.8px */
 }
 
-
-
-
 .container {
   overflow: hidden;
   max-width: 1920px;
@@ -82,21 +79,61 @@ h4 {
 
   min-height: 40px;
   min-width: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
-  margin: 0;
-  padding: 0;
-  background-color: transparent;
-  cursor: pointer;
   border: none;
-  border-radius: 50%;
   outline: none;
+  background: transparent;
+
+  padding-top: 27px;
+
+  margin: auto;
+
+  z-index: 1;
+  transition: background 0.6s ease, color 0.6s ease;
+
+  transition: 500ms;
 }
-.menu-toggle:hover,
-.menu-toggle:focus {
-  background-color: rgba(0, 0, 0, 0.1);
+
+.span {
+  display: block;
+  height: 2px;
+  width: 26px;
+  background: #57a6eb;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transition: opacity 0.3s ease, transform 0.3s ease, background 0.6s ease;
+}
+.q {
+  top: 12px;
+}
+.q.is-open {
+  opacity: 0;
+}
+
+.qq {
+  top: 18px;
+}
+.qq.is-open {
+  transform: rotate(45deg);
+}
+.qqq {
+  top: 18px;
+}
+.qqq.is-open {
+  transform: rotate(-45deg);
+}
+.qqqq {
+  top: 25px;
+}
+.qqqq.is-open {
+  opacity: 0;
+}
+
+.menu-toggle:hover {
+  transform: scale(1.1);
+  transition: 500ms;
 }
 
 .menu-container {
@@ -155,8 +192,6 @@ h4 {
   text-decoration: underline;
 }
 
-
-
 .mobile-menu__btn-container {
   display: flex;
   justify-content: center;
@@ -181,11 +216,6 @@ h4 {
 
 /* =========== */
 @media screen and (max-width: 1240px) {
-  .header__logo {
-    width: 50%;
-  }
-
-
 }
 @media screen and (max-width: 1024px) {
   .container {
@@ -193,16 +223,15 @@ h4 {
     /* padding-left: 16px;
     padding-right: 16px; */
   }
-
- 
+  .menu {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .container {
     max-width: 768px;
   }
-
-
 }
 
 @media screen and (max-width: 479px) {
@@ -214,7 +243,6 @@ h4 {
   .menu-container {
     padding: 1px;
   }
-
 }
 
 /* ////////////////////////////////////////////////////////////////////
@@ -222,10 +250,11 @@ h4 {
 
 @media (max-width: 1240px) {
   .menu {
-    display: none;
+    /* display: none; */
+    margin: auto;
+    margin-right: 285px;
+    /* transition: 500ms linear; */
   }
-
-
 
   .searchMenu.is-open {
     bottom: 7px;
@@ -234,7 +263,6 @@ h4 {
     left: unset;
     position: absolute;
   }
-
 }
 
 @media (min-width: 1241px) {

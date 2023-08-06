@@ -1,10 +1,14 @@
 (() => {
   const mobileMenu = document.querySelector('.js-menu-container');
   const openMenuBtn = document.querySelector('.js-open-menu');
-  const closeMenuBtn = document.querySelector('.js-close-menu');
+  // const closeMenuBtn = document.querySelector('.js-close-menu');
+
+  const q = document.querySelector('.q');
+  const qq = document.querySelector('.qq');
+  const qqq = document.querySelector('.qqq');
+  const qqqq = document.querySelector('.qqqq');
 
   const searchGlass = document.querySelector('#searchGlass');
-
   const searchMenu = document.querySelector('.searchMenu');
 
   const searchGlassMenu = () => {
@@ -37,13 +41,17 @@
     const isMenuOpen = openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
     openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
     mobileMenu.classList.toggle('is-open');
+    q.classList.toggle('is-open');
+    qq.classList.toggle('is-open');
+    qqq.classList.toggle('is-open');
+    qqqq.classList.toggle('is-open');
 
     const scrollLockMethod = !isMenuOpen ? 'disableBodyScroll' : 'enableBodyScroll';
     bodyScrollLock[scrollLockMethod](document.body);
   };
 
   openMenuBtn.addEventListener('click', toggleMenu);
-  closeMenuBtn.addEventListener('click', toggleMenu);
+  // closeMenuBtn.addEventListener('click', toggleMenu);
 
   // Close the mobile menu on wider screens if the device orientation changes
   window.matchMedia('(min-width: 1240px)').addEventListener('change', e => {
