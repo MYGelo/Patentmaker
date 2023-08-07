@@ -1,6 +1,7 @@
 (() => {
   const mobileMenu = document.querySelector('.js-menu-container');
   const openMenuBtn = document.querySelector('.js-open-menu');
+  const MB = document.querySelector('.nav-links');
   // const closeMenuBtn = document.querySelector('.js-close-menu');
 
   const q = document.querySelector('.q');
@@ -41,6 +42,7 @@
     const isMenuOpen = openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
     openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
     mobileMenu.classList.toggle('is-open');
+
     q.classList.toggle('is-open');
     qq.classList.toggle('is-open');
     qqq.classList.toggle('is-open');
@@ -52,6 +54,21 @@
 
   openMenuBtn.addEventListener('click', toggleMenu);
   // closeMenuBtn.addEventListener('click', toggleMenu);
+
+  document.addEventListener('click', e => {
+    let its_menu = e.target == mobileMenu || mobileMenu.contains(e.target);
+    let its_hamburger = e.target == MB || MB.contains(e.target);
+
+    if (its_hamburger === its_menu) {
+      mobileMenu.classList.remove('is-open');
+      const isMenuOpen = openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
+      openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
+      q.classList.toggle('is-open');
+      qq.classList.toggle('is-open');
+      qqq.classList.toggle('is-open');
+      qqqq.classList.toggle('is-open');
+    }
+  });
 
   // Close the mobile menu on wider screens if the device orientation changes
   window.matchMedia('(min-width: 1240px)').addEventListener('change', e => {
