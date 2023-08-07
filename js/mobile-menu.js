@@ -14,21 +14,28 @@
 
   const searchGlassMenu = () => {
     searchMenu.classList.toggle('is-open');
+    searchGlass.getAttribute('aria-expanded');
+    searchGlass.setAttribute('aria-expanded', true);
 
     searchMenu.addEventListener('submit', e => {
       e.preventDefault();
+
       const {
         elements: { search },
       } = e.currentTarget;
 
       if (search.value === '') {
         searchMenu.classList.remove('is-open');
+        searchGlass.setAttribute('aria-expanded', false);
+
         console.log(`nothing entered in search`);
         // alert(`nothing entered in search`);
+
         e.target.reset();
       } else {
         console.log(search.value);
         // alert(`search :  ${search.value} `);
+        searchGlass.setAttribute('aria-expanded', false);
         searchMenu.classList.remove('is-open');
         e.target.reset();
       }
@@ -58,16 +65,22 @@
   document.addEventListener('click', e => {
     let its_menu = e.target == mobileMenu || mobileMenu.contains(e.target);
     let its_hamburger = e.target == MB || MB.contains(e.target);
+    const isMenuOpen = openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
 
-    if (its_hamburger === its_menu) {
+    if (isMenuOpen && its_hamburger === its_menu) {
       mobileMenu.classList.remove('is-open');
-      const isMenuOpen = openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
+
       openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
       q.classList.toggle('is-open');
       qq.classList.toggle('is-open');
       qqq.classList.toggle('is-open');
       qqqq.classList.toggle('is-open');
     }
+    // if (searchGlass.getAttribute('aria-expanded') !== its_menu) {
+    //   console.log(`searchGlass.setAttribute`, searchGlass.getAttribute('aria-expanded'));
+    //   // searchGlass.setAttribute('aria-expanded', false);
+    //   // searchMenu.classList.remove('is-open');
+    // }
   });
 
   // Close the mobile menu on wider screens if the device orientation changes
