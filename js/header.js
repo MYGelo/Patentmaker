@@ -5,9 +5,9 @@ window.addEventListener('scroll', function () {
 
   if (scrollPosition >= 400) {
     navBg.classList.add('is-open');
-    console.log(`hide`);
+    // console.log(`hide`);
   } else {
-    console.log(`open`);
+    // console.log(`open`);
     navBg.classList.remove('is-open');
   }
 });

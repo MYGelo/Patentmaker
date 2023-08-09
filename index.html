@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/buttons.css" />
     <link rel="stylesheet" href="css/header.css" />
-    <link rel="stylesheet" href="css/efficiency-section.css" />
+    <link rel="stylesheet" href="css/hero.css" />
     <link rel="stylesheet" href="css/technology.css" />
     <link rel="stylesheet" href="css/assistant.css" />
     <link rel="stylesheet" href="css/product.css" />
@@ -80,167 +80,165 @@
         </div>
 
         <div class="nav-links__bg" id="nav-links__bg">
-          <nav class="nav-links">
-            <a href="./index.html" class="header__logo">
-              <svg width="100%" height="100%">
-                <use href="./images/symbol-defs.svg#logo" />
-              </svg>
-            </a>
+          <div class="container">
+            <nav class="nav-links">
+              <a href="./index.html" class="header__logo">
+                <svg width="100%" height="100%">
+                  <use href="./images/symbol-defs.svg#logo" />
+                </svg>
+              </a>
 
-            <ul class="menu">
-              <li class="nav-links__items">
-                <a class="link nav-links__items__link" href="./index.html">Product</a>
-              </li>
-              <li class="nav-links__items">
-                <a class="link nav-links__items__link" href="./index.html">Firm</a>
-              </li>
-              <li class="nav-links__items">
-                <a class="link nav-links__items__link" href="./index.html">Pricing</a>
-              </li>
-              <li class="nav-links__items">
-                <a class="link nav-links__items__link" href="./index.html">Resources</a>
-              </li>
-              <li class="nav-links__items">
-                <a class="link nav-links__items__link" href="./index.html">Support</a>
-              </li>
-              <li class="nav-links__items">
-                <a class="link nav-links__items__link" href="./index.html">Contact</a>
-              </li>
-            </ul>
+              <ul class="menu">
+                <li class="nav-links__items">
+                  <a class="link nav-links__items__link" href="./index.html">Product</a>
+                </li>
+                <li class="nav-links__items">
+                  <a class="link nav-links__items__link" href="./index.html">Firm</a>
+                </li>
+                <li class="nav-links__items">
+                  <a class="link nav-links__items__link" href="./index.html">Pricing</a>
+                </li>
+                <li class="nav-links__items">
+                  <a class="link nav-links__items__link" href="./index.html">Resources</a>
+                </li>
+                <li class="nav-links__items">
+                  <a class="link nav-links__items__link" href="./index.html">Support</a>
+                </li>
+                <li class="nav-links__items">
+                  <a class="link nav-links__items__link" href="./index.html">Contact</a>
+                </li>
+              </ul>
 
-            <button class="btn btn__header button__primery" type="button">free trial</button>
+              <button class="btn btn__header button__primery" type="button">free trial</button>
 
-            <form class="searchMenu">
-              <input class="searchMenu__input" type="text" placeholder="Search..." name="search" />
-              <button type="submit" class="btn searchMenu__btn button__primery">
-                <svg style="width: 20px; height: 20px">
+              <form class="searchMenu">
+                <input
+                  class="searchMenu__input"
+                  type="text"
+                  placeholder="Search..."
+                  name="search"
+                />
+                <button type="submit" class="btn searchMenu__btn button__primery">
+                  <svg style="width: 20px; height: 20px">
+                    <use href="./images/symbol-defs.svg#icon-Frame-3"></use>
+                  </svg>
+                </button>
+              </form>
+
+              <button
+                class="nav-links__items__btn"
+                type="button"
+                id="searchGlass"
+                aria-expanded="false"
+                aria-controls="searchMenu"
+              >
+                <svg style="width: 26px; height: 26px">
                   <use href="./images/symbol-defs.svg#icon-Frame-3"></use>
                 </svg>
               </button>
-            </form>
-
-            <button
-              class="nav-links__items__btn"
-              type="button"
-              id="searchGlass"
-              aria-expanded="false"
-              aria-controls="searchMenu"
-            >
-              <svg style="width: 26px; height: 26px">
-                <use href="./images/symbol-defs.svg#icon-Frame-3"></use>
-              </svg>
-            </button>
-
-            <!-- <button
-              class="menu-toggle js-open-menu"
-              aria-expanded="false"
-              aria-controls="mobile-menu"
-            >
-              <svg
-                width="40"
-                height="40"
-                fill="#57a6eb"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
+              <button
+                class="menu-toggle js-open-menu"
+                aria-expanded="false"
+                aria-controls="mobile-menu"
               >
-                <path
-                  fill-rule="evenodd"
-                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                  clip-rule="evenodd"
-                ></path>
-              </svg>
-            </button> -->
-            <button
-              class="menu-toggle js-open-menu"
-              aria-expanded="false"
-              aria-controls="mobile-menu"
-            >
-              <span class="span q"></span>
-              <span class="span qq"></span>
-              <span class="span qqq"></span>
-              <span class="span qqqq"></span>
-            </button>
-          </nav>
+                <span class="span q"></span>
+                <span class="span qq"></span>
+                <span class="span qqq"></span>
+                <span class="span qqqq"></span>
+              </button>
+            </nav>
+          </div>
         </div>
       </div>
     </header>
-
     <main>
-      <section class="Efficiency-section__bg">
-        <div class="Efficiency-section container">
-          <div class="Efficiency-section__container">
-            <p class="Efficiency-section__welcome">Welcome to Patent Maker</p>
-            <h1 class="Efficiency-section__title">
-              Efficiency you can <br />
-              count on and you need
-            </h1>
-            <p class="Efficiency-section__text">
-              Generate more revenue with less time and cost.<br />
-              From Patent Attorney for Patent Attorney
-            </p>
-            <button class="btn button__primery Efficiency-section__btn" type="button">
-              Get Started
-              <span class="Efficiency-section__vektor">
-                <svg style="width: 16.34px; height: 14.4px">
-                  <use href="./images/symbol-defs.svg#icon-arrow"></use>
-                </svg>
-              </span>
-            </button>
+      <section class="hero">
+        <div class="hero--wrapper">
+          <img
+            class="hero__img-bg"
+            src="./images/banner.jpeg"
+            alt="decorate background image"
+            class="hero__img-bg"
+          />
+          <div class="container container--hero">
+            <div class="hero__content--wrap">
+              <div class="hero__content">
+                <p class="hero__welcome">Welcome to Patent Maker</p>
+                <h1 class="hero__title">
+                  Efficiency you can <br />
+                  count on and you need
+                </h1>
+                <p class="hero__text">
+                  Generate more revenue with less time and cost.<br />
+                  From Patent Attorney for Patent Attorney
+                </p>
+                <button class="btn button__primery Efficiency-section__btn" type="button">
+                  Get Started
+                  <span class="Efficiency-section__vektor">
+                    <svg style="width: 16.34px; height: 14.4px">
+                      <use href="./images/symbol-defs.svg#icon-arrow"></use>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <div class="hero__info">
+                <div class="hero__info--wrapper">
+                  <div class="hero__info__img--wrap">
+                    <img src="./images/Rectangle.png" alt="information" />
+                  </div>
+                  <span class="hero__info__item hero__info__item-1">
+                    <div class="decor-poiter decor-poiter--top">
+                      <svg>
+                        <use href="./images/symbol-defs.svg#icon-Ellipse-2"></use>
+                      </svg>
+                    </div>
+                    <span>Efficiency</span>
+                  </span>
+                  <span class="hero__info__item hero__info__item-2">
+                    <div class="decor-poiter decor-poiter--left-1">
+                      <svg style="width: 10px; height: 10px; position: absolute; left: -18px">
+                        <use href="./images/symbol-defs.svg#icon-Ellipse-2"></use>
+                      </svg>
+                    </div>
+                    <span>Improvement</span>
+                  </span>
+                  <span class="hero__info__item hero__info__item-3">
+                    <div class="decor-poiter decor-poiter--left-2">
+                      <svg style="width: 10px; height: 10px; position: absolute; left: -18px">
+                        <use href="./images/symbol-defs.svg#icon-Ellipse-2"></use>
+                      </svg>
+                    </div>
+                    <span>Technology</span>
+                  </span>
+                  <span class="hero__info__item hero__info__item-4">
+                    <div class="decor-poiter decor-poiter--bottom">
+                      <svg style="width: 10px; height: 10px; position: absolute; bottom: -18px">
+                        <use href="./images/symbol-defs.svg#icon-Ellipse-2"></use>
+                      </svg>
+                    </div>
+                    <span>Optimization</span>
+                  </span>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="Efficiency-info">
-            <image class="Efficiency-info__img" src="./images/Rectangle.png" alt="information" />
-            <span class="Efficiency-info__text Efficiency-info__text__Efficiency"
-              ><svg style="width: 10px; height: 10px; position: absolute; top: -18px">
-                <use href="./images/symbol-defs.svg#icon-Ellipse-2"></use>
-              </svg>
-              Efficiency</span
-            >
-            <span class="Efficiency-info__text Efficiency-info__text__Improvement">
-              <svg style="width: 10px; height: 10px; position: absolute; left: -18px">
-                <use href="./images/symbol-defs.svg#icon-Ellipse-2"></use>
-              </svg>
-              Improvement</span
-            >
-            <span class="Efficiency-info__text Efficiency-info__text__Technology">
-              <svg style="width: 10px; height: 10px; position: absolute; left: -18px">
-                <use href="./images/symbol-defs.svg#icon-Ellipse-2"></use>
-              </svg>
-              Technology</span
-            >
-            <span class="Efficiency-info__text Efficiency-info__text__Optimization">
-              <svg style="width: 10px; height: 10px; position: absolute; bottom: -18px">
-                <use href="./images/symbol-defs.svg#icon-Ellipse-2"></use>
-              </svg>
-              Optimization</span
-            >
+          <div class="decor-bottom-white">
+            <svg viewBox="0 0 1917 157" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 156.5L1920 0V156.5H0Z" fill="white"></path>
+            </svg>
           </div>
-        </div>
-
-        <div style="width: 100%; position: absolute; bottom: -1%">
-          <!-- <svg style="width: 100%; height: 100%">
-            <use href="./images/symbol-defs.svg#icon-Rectangle-7" width="100%" height="100%"></use>
-          </svg> -->
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="100%"
-            height="100%"
-            viewBox="0 0 1917 157"
-            fill="none"
-          >
-            <path d="M0 156.5L1920 0V156.5H0Z" fill="white" />
-          </svg>
         </div>
       </section>
 
       <section class="technology-section">
         <div class="container" style="overflow: visible">
-          <div class="technology">
+          <div class="technology--wrapper">
             <div class="technology__img-container">
-              <image class="technology__img" src="./images/man.png" alt="technology" />
+              <img src="./images/man.png" alt="man" />
             </div>
             <div class="technology__container">
-              <span class="technology__label"> technology and internet</span>
-              <h2 class="technology__title">It ends where it starts</h2>
+              <span class="decoration__text"> technology and internet</span>
+              <h2>It ends where it starts</h2>
               <p class="technology__text">
                 The golden time for patent attorneys seems to be long over. It starts from the
                 population of technology and internet, whereby the hard work of patent attorneys was
@@ -258,20 +256,21 @@
             </div>
           </div>
         </div>
-        <div style="width: 100%; display: flex">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 157" width="100%" fill="none">
-            <path d="M1920 157L0 0V157H1920Z" fill="#F6F8FA" />
-          </svg>
-        </div>
       </section>
 
       <section class="assistant">
+        <div class="top-decor-wrap">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 157" width="100%" fill="none">
+            <path d="M1920 157L0 0V157H1920Z" fill="#F6F8FA"></path>
+          </svg>
+        </div>
+
         <div class="container" style="overflow: visible">
-          <div class="assistant__container">
+          <div class="assistant__wrapper">
             <div class="assistant__container-text">
-              <span class="assistant__label"> routine automation</span>
-              <h2 class="assistant__title">PatentMaker Digital Assistant</h2>
-              <p class="assistant__text">
+              <span class="decoration__text"> routine automation</span>
+              <h2>PatentMaker Digital Assistant</h2>
+              <p class="assistant__subText">
                 By automating routine tasks we help patent attorneys and law firms be more
                 productive and efficient. Numerous time-saving functions are just a click away.
               </p>
@@ -282,66 +281,54 @@
                   <svg class="assistant__svg">
                     <use href="./images/symbol-defs.svg#icon-Frame-11"></use>
                   </svg>
-                  <div class="assistant__svg-vector">
-                    <svg class="assistant__svg-vector">
-                      <use href="./images/symbol-defs.svg#icon-Vector-2"></use>
-                    </svg>
-                  </div>
+                  <svg class="assistant__svg-vector">
+                    <use href="./images/symbol-defs.svg#icon-Vector-2"></use>
+                  </svg>
                   <p class="assistant__item__text">Integrated into Microsoft Word</p>
                 </li>
                 <li class="assistant__item">
                   <svg class="assistant__svg">
                     <use href="./images/symbol-defs.svg#icon-Group-24" />
                   </svg>
-                  <div class="assistant__svg-vector">
-                    <svg class="assistant__svg-vector">
-                      <use href="./images/symbol-defs.svg#icon-Vector-2"></use>
-                    </svg>
-                  </div>
+                  <svg class="assistant__svg-vector">
+                    <use href="./images/symbol-defs.svg#icon-Vector-2"></use>
+                  </svg>
                   <p class="assistant__item__text">Loads PDF documents from the registers</p>
                 </li>
                 <li class="assistant__item">
                   <svg class="assistant__svg">
                     <use href="./images/symbol-defs.svg#icon-Group-23"></use>
                   </svg>
-                  <div class="assistant__svg-vector">
-                    <svg class="assistant__svg-vector">
-                      <use href="./images/symbol-defs.svg#icon-Vector-2"></use>
-                    </svg>
-                  </div>
+                  <svg class="assistant__svg-vector">
+                    <use href="./images/symbol-defs.svg#icon-Vector-2"></use>
+                  </svg>
                   <p class="assistant__item__text">Detects formal errors in claims</p>
                 </li>
                 <li class="assistant__item">
                   <svg class="assistant__svg">
                     <use href="./images/symbol-defs.svg#icon-Group-16" />
                   </svg>
-                  <div class="assistant__svg-vector">
-                    <svg class="assistant__svg-vector">
-                      <use href="./images/symbol-defs.svg#icon-Vector-2"></use>
-                    </svg>
-                  </div>
+                  <svg class="assistant__svg-vector">
+                    <use href="./images/symbol-defs.svg#icon-Vector-2"></use>
+                  </svg>
                   <p class="assistant__item__text">Inserts references</p>
                 </li>
                 <li class="assistant__item">
                   <svg class="assistant__svg">
                     <use href="./images/symbol-defs.svg#icon-Group-20" />
                   </svg>
-                  <div class="assistant__svg-vector">
-                    <svg class="assistant__svg-vector">
-                      <use href="./images/symbol-defs.svg#icon-Vector-2"></use>
-                    </svg>
-                  </div>
+                  <svg class="assistant__svg-vector">
+                    <use href="./images/symbol-defs.svg#icon-Vector-2"></use>
+                  </svg>
                   <p class="assistant__item__text">Prepares reply letters and descriptions</p>
                 </li>
                 <li class="assistant__item">
                   <svg class="assistant__svg">
                     <use href="./images/symbol-defs.svg#icon-Group-25" />
                   </svg>
-                  <div class="assistant__svg-vector">
-                    <svg class="assistant__svg-vector">
-                      <use href="./images/symbol-defs.svg#icon-Vector-2"></use>
-                    </svg>
-                  </div>
+                  <svg class="assistant__svg-vector">
+                    <use href="./images/symbol-defs.svg#icon-Vector-2"></use>
+                  </svg>
                   <p class="assistant__item__text">and much more</p>
                 </li>
               </ul>
@@ -368,7 +355,7 @@
                   </svg>
                 </span>
               </button>
-              <button class="btn button__secondary assistant__btn-second">
+              <button class="btn button__secondary">
                 FREE TRIAL
                 <span class="btn__second__vector">
                   <svg style="width: 16.34px; height: 14.4px">
@@ -378,47 +365,53 @@
               </button>
             </div>
           </div>
-          <svg
-            style="position: absolute; left: 0"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 1920 157"
-            fill="none"
-          >
-            <path d="M1920 0L0 157V0H1920Z" fill="#F6F8FA" />
+        </div>
+        <div class="bottom-decor-wrap">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 157" fill="none">
+            <path d="M1920 0L0 157V0H1920Z" fill="#F6F8FA"></path>
           </svg>
         </div>
       </section>
 
-      <div class="container">
-        <section class="product">
-          <div class="product__container">
-            <span class="product__label">PatentMaker Legal Workflow Automation</span>
-            <h2 class="product__title">Efficiency you can count on and you need</h2>
-            <p class="product__text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras molestie ornare viverra.
-              Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris a congue eros.
-              Aliquam sit amet magna id arcu iaculis tincidunt sit amet quis metus. Nulla quam mi,
-              porttitor non tempus nec, consequat ac nunc. Donec blandit diam urna, quis sodales
-              mauris tincidunt ac. Curabitur dapibus libero non rhoncus porta. Nullam egestas
-              placerat dolor, non malesuada arcu dictum efficitur.
-            </p>
-            <button class="btn button__secondary product__btn" type="button">
-              meet our product
-            </button>
+      <section class="product">
+        <div class="container">
+          <div class="product--wrapper">
+            <div class="product__container">
+              <span class="decoration__text" style="justify-content: start"
+                >PatentMaker Legal Workflow Automation</span
+              >
+              <h2>Efficiency you can count on and you need</h2>
+              <p class="product__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras molestie ornare
+                viverra. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris a
+                congue eros. Aliquam sit amet magna id arcu iaculis tincidunt sit amet quis metus.
+                Nulla quam mi, porttitor non tempus nec, consequat ac nunc. Donec blandit diam urna,
+                quis sodales mauris tincidunt ac. Curabitur dapibus libero non rhoncus porta. Nullam
+                egestas placerat dolor, non malesuada arcu dictum efficitur.
+              </p>
+              <button class="btn button__secondary product__btn" type="button">
+                meet our product
+              </button>
+            </div>
+            <div class="product__img-container">
+              <img src="./images/Rectangle.png" alt="alt" />
+            </div>
           </div>
-          <div class="product__img-container">
-            <image class="Efficiency-info__img" src="./images/Rectangle.png" alt="alt" />
-          </div>
-        </section>
+        </div>
+      </section>
 
-        <section class="video-section">
+      <section class="video-section">
+        <div class="container video-section__container--bg">
+          <div class="decorate-svg--wrapper">
+            <img src="./images/svg/Group 110.svg" alt="decorate" />
+          </div>
           <div class="video__container">
             <video
               poster="./images/b09b4d0023cb2a4a3a56b508b2400d93.jpg"
               controls
               loop
               preload="auto"
-              class="video"
+              class="video__container-video"
             >
               <source
                 src="http://techslides.com/demos/sample-videos/small.webm"
@@ -427,9 +420,14 @@
               <source src="http://techslides.com/demos/sample-videos/small.mp4" type="video/mp4" />
               <source src="http://techslides.com/demos/sample-videos/small.ogg" type="video/ogg" />
             </video>
+            <div class="play-btn--wrap">
+              <div class="play-btn__red">
+                <img src="./images/svg/Play.svg" alt="play" />
+              </div>
+            </div>
           </div>
           <div class="video-section__text-container">
-            <h2 class="video-section__title">Explore our Video demo</h2>
+            <p class="video-section__title">Explore our Video demo</p>
             <p class="video-section__text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras molestie ornare viverra.
               Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris a congue eros.
@@ -438,159 +436,131 @@
               mauris tincidunt ac.
             </p>
           </div>
-          <svg class="video__svg-1">
-            <use href="./images/symbol-defs.svg#icon-Frame-video" />
-          </svg>
-
-          <svg class="video__svg-2">
-            <use href="./images/symbol-defs.svg#icon-Frame-video" />
-          </svg>
-
-          <svg class="video__svg-3">
-            <use href="./images/symbol-defs.svg#icon-Frame-video" />
-          </svg>
-
-          <svg class="video__svg-4">
-            <use href="./images/symbol-defs.svg#icon-Frame-video" />
-          </svg>
-
-          <svg class="video__svg-5">
-            <use href="./images/symbol-defs.svg#icon-Frame-video" />
-          </svg>
-
-          <svg class="video__svg-6">
-            <use href="./images/symbol-defs.svg#icon-Frame-video" />
-          </svg>
-
-          <svg class="video__svg-7">
-            <use href="./images/symbol-defs.svg#icon-Frame-video"></use>
-          </svg>
-
-          <svg class="video__svg-8">
-            <use href="./images/symbol-defs.svg#icon-Frame-video"></use>
-          </svg>
-
-          <svg class="video__svg-9">
-            <use href="./images/symbol-defs.svg#icon-Frame-video"></use>
-          </svg>
-        </section>
-      </div>
+        </div>
+      </section>
 
       <section class="partners">
-        <h2 class="partners__title">No one stands alone</h2>
-        <p class="partners__text">
-          We develop us together with you. Bring your ideas for your benefit.
-        </p>
-        <ul class="partners__container">
-          <li class="partners__item">PARTNER LOGO</li>
-          <li class="partners__item">PARTNER LOGO</li>
-          <li class="partners__item">PARTNER LOGO</li>
-          <li class="partners__item">PARTNER LOGO</li>
-          <li class="partners__item">PARTNER LOGO</li>
-          <li class="partners__item">PARTNER LOGO</li>
-          <li class="partners__item">PARTNER LOGO</li>
-          <li class="partners__item">PARTNER LOGO</li>
-          <li class="partners__item">PARTNER LOGO</li>
-          <li class="partners__item">PARTNER LOGO</li>
-          <li class="partners__item">PARTNER LOGO</li>
+        <div class="container">
+          <h2>No one stands alone</h2>
+          <p class="partners__text">
+            We develop us together with you. Bring your ideas for your benefit.
+          </p>
+        </div>
+        <ul class="partners__list">
+          <li class="partners__item"><span>PARTNER LOGO</span></li>
+          <li class="partners__item"><span>PARTNER LOGO</span></li>
+          <li class="partners__item"><span>PARTNER LOGO</span></li>
+          <li class="partners__item"><span>PARTNER LOGO</span></li>
+          <li class="partners__item"><span>PARTNER LOGO</span></li>
+          <li class="partners__item"><span>PARTNER LOGO</span></li>
+          <li class="partners__item"><span>PARTNER LOGO</span></li>
+          <li class="partners__item"><span>PARTNER LOGO</span></li>
+          <li class="partners__item"><span>PARTNER LOGO</span></li>
+          <li class="partners__item"><span>PARTNER LOGO</span></li>
+          <li class="partners__item"><span>PARTNER LOGO</span></li>
         </ul>
       </section>
 
-      <section class="contactUs__bg">
-        <div class="container">
-          <div class="contactUs">
-            <div class="contactUs__container">
-              <h2 class="contactUs__title">Contact Us</h2>
-              <p class="contactUs__text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras molestie ornare
-                viverra. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris a
-                congue
-              </p>
-              <form class="contactUs__form">
-                <div class="contactUs__label">
-                  <div class="contactUs__label-container">
-                    <svg style="position: absolute; bottom: 27px; width: 24px; height: 24px">
-                      <use href="./images/symbol-defs.svg#icon-Frame-14"></use>
-                    </svg>
-                    <input
-                      class="contactUs__input"
-                      type="text"
-                      name="name"
-                      placeholder=" Name*"
-                      required=""
-                      id="input-name"
-                      autocomplete="off"
-                    />
-                  </div>
-                </div>
-
-                <div class="contactUs__label">
-                  <div class="contactUs__label-container">
-                    <svg style="position: absolute; bottom: 27px; width: 24px; height: 24px">
-                      <use href="./images/symbol-defs.svg#icon-Frame-15"></use>
-                    </svg>
-                    <input
-                      class="contactUs__input"
-                      type="tel"
-                      name="phone"
-                      placeholder=" Phone"
-                      required=""
-                      id="input-phone"
-                      autocomplete="off"
-                    />
-                  </div>
-                </div>
-
-                <div class="contactUs__label">
-                  <div class="contactUs__label-container">
-                    <svg style="position: absolute; bottom: 27px; width: 24px; height: 24px">
-                      <use href="./images/symbol-defs.svg#icon-Frame-16"></use>
-                    </svg>
-                    <input
-                      class="contactUs__input"
-                      type="email"
-                      name="input-mail"
-                      placeholder=" Email*"
-                      required=""
-                      id="input-mail"
-                      autocomplete="off"
-                    />
-                  </div>
-                </div>
-
-                <div class="contactUs__label">
-                  <div class="contactUs__label-container">
-                    <svg style="position: absolute; bottom: 27px; width: 24px; height: 24px">
-                      <use href="./images/symbol-defs.svg#icon-Frame-17"></use>
-                    </svg>
-                    <textarea
-                      class="contactUs__input"
-                      name="feedback"
-                      placeholder=" Message"
-                      rows="1"
-                      autocomplete="off"
-                      id="input-massage"
-                    ></textarea>
-                  </div>
-                </div>
-
-                <button class="btn button__tertiary contactUs__btn" type="submit">
-                  Send message
-                  <span class="Efficiency-section__vektor">
-                    <svg style="width: 16.34px; height: 14.4px">
-                      <use href="./images/symbol-defs.svg#icon-arrow"></use>
-                    </svg>
-                  </span>
-                </button>
-              </form>
+      <section class="contact">
+        <div class="decorate-bg-image">
+          <img src="./images/tower.jpeg" alt="build" />
+        </div>
+        <div class="container container--position">
+          <div class="content--wrap">
+            <div class="photo--wrapper">
+              <img src="./images/kisspng-businessperson-business-administration.png" alt="man" />
             </div>
+            <h2>Contact Us</h2>
+            <p class="content__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras molestie ornare viverra.
+              Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris a congue
+            </p>
+          </div>
+          <div class="form__container">
+            <form class="contactUs__form">
+              <div class="contactUs__label">
+                <div class="contactUs__label-container">
+                  <svg style="position: absolute; bottom: 27px; width: 24px; height: 24px">
+                    <use href="./images/symbol-defs.svg#icon-Frame-14"></use>
+                  </svg>
+                  <input
+                    class="contactUs__input"
+                    type="text"
+                    name="name"
+                    placeholder=" Name*"
+                    required=""
+                    id="input-name"
+                    autocomplete="off"
+                  />
+                </div>
+              </div>
+
+              <div class="contactUs__label">
+                <div class="contactUs__label-container">
+                  <svg style="position: absolute; bottom: 27px; width: 24px; height: 24px">
+                    <use href="./images/symbol-defs.svg#icon-Frame-15"></use>
+                  </svg>
+                  <input
+                    class="contactUs__input"
+                    type="tel"
+                    name="phone"
+                    placeholder=" Phone"
+                    required=""
+                    id="input-phone"
+                    autocomplete="off"
+                  />
+                </div>
+              </div>
+
+              <div class="contactUs__label">
+                <div class="contactUs__label-container">
+                  <svg style="position: absolute; bottom: 27px; width: 24px; height: 24px">
+                    <use href="./images/symbol-defs.svg#icon-Frame-16"></use>
+                  </svg>
+                  <input
+                    class="contactUs__input"
+                    type="email"
+                    name="input-mail"
+                    placeholder=" Email*"
+                    required=""
+                    id="input-mail"
+                    autocomplete="off"
+                  />
+                </div>
+              </div>
+
+              <div class="contactUs__label">
+                <div class="contactUs__label-container">
+                  <svg style="position: absolute; bottom: 27px; width: 24px; height: 24px">
+                    <use href="./images/symbol-defs.svg#icon-Frame-17"></use>
+                  </svg>
+                  <textarea
+                    class="contactUs__input"
+                    name="feedback"
+                    placeholder=" Message"
+                    rows="1"
+                    autocomplete="off"
+                    id="input-massage"
+                  ></textarea>
+                </div>
+              </div>
+
+              <button class="btn button__tertiary contactUs__btn" type="submit">
+                Send message
+                <span class="Efficiency-section__vektor">
+                  <svg style="width: 16.34px; height: 14.4px">
+                    <use href="./images/symbol-defs.svg#icon-arrow"></use>
+                  </svg>
+                </span>
+              </button>
+            </form>
           </div>
         </div>
       </section>
     </main>
     <footer class="footer">
       <div class="container">
-        <section class="footer__nav">
+        <div class="footer__nav">
           <div class="footer__social-links">
             <svg class="footer__svg">
               <use href="./images/symbol-defs.svg#icon-Frame-12"></use>
@@ -654,54 +624,40 @@
             </ul>
           </div>
           <div class="footer__product">
-            <p class="footer__title" style="margin-left: 15px">Product</p>
-            <button class="btn button__tertiary button__tertiary__footer">
-              Free trail
-              <span class="Efficiency-section__vektor">
-                <svg style="width: 16.34px; height: 14.4px">
-                  <use href="./images/symbol-defs.svg#icon-Frame-9"></use>
-                </svg>
-              </span>
-            </button>
+            <p class="footer__title">Product</p>
+            <div class="footer__product__btn--wrap">
+              <button class="btn button__tertiary">
+                Free trail
+                <span class="Efficiency-section__vektor">
+                  <svg style="width: 16.34px; height: 14.4px">
+                    <use href="./images/symbol-defs.svg#icon-Frame-9"></use>
+                  </svg>
+                </span>
+              </button>
 
-            <button class="btn button__primery footer__btn__second">
-              Buy now
-              <span class="Efficiency-section__vektor">
-                <svg style="width: 16.34px; height: 14.4px">
-                  <use href="./images/symbol-defs.svg#icon-arrow"></use>
-                </svg>
-              </span>
-            </button>
+              <button class="btn button__primery">
+                Buy now
+                <span class="Efficiency-section__vektor">
+                  <svg style="width: 16.34px; height: 14.4px">
+                    <use href="./images/symbol-defs.svg#icon-arrow"></use>
+                  </svg>
+                </span>
+              </button>
+            </div>
           </div>
-        </section>
+        </div>
 
-        <section class="footer__under">
+        <div class="footer__under">
           <ul class="footer__under__list">
-            <li class="footer__under__item"><a>Imprint</a></li>
-            <li class="footer__under__item"><a>Discalim</a></li>
+            <li class="footer__under__item">Imprint</li>
+            <li class="footer__under__item">Discalim</li>
           </ul>
           <span style="text-align: center">All rights reserved 2023. PatentMaker.com</span>
-        </section>
+        </div>
       </div>
     </footer>
 
     <div class="menu-container js-menu-container" id="mobile-menu">
-      <!-- <button class="menu-toggle js-close-menu">
-        <svg
-          fill="currentColor"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-            clip-rule="evenodd"
-          ></path>
-        </svg>
-      </button> -->
-
       <ul class="mobile-menu">
         <li class="nav-links__items">
           <a class="link nav-links__items__link" href="./index.html">Product</a>
@@ -769,7 +725,7 @@
       </div>
     </div>
 
-    <script defer src="js/mobile-menu.js"></script>
-    <script defer src="js/header.js"></script>
+    <script type="module" defer src="js/mobile-menu.js"></script>
+    <script type="module" defer src="js/header.js"></script>
   </body>
 </html>

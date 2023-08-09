@@ -86,6 +86,11 @@
   // Close the mobile menu on wider screens if the device orientation changes
   window.matchMedia('(min-width: 1240px)').addEventListener('change', e => {
     if (!e.matches) return;
+    q.classList.toggle('is-open');
+    qq.classList.toggle('is-open');
+    qqq.classList.toggle('is-open');
+    qqqq.classList.toggle('is-open');
+
     mobileMenu.classList.remove('is-open');
     openMenuBtn.setAttribute('aria-expanded', false);
     bodyScrollLock.enableBodyScroll(document.body);
