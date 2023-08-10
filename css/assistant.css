@@ -35,6 +35,11 @@ ul.assistant__list li:last-child .assistant__item__text {
   text-transform: uppercase;
 }
 .assistant__item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
   padding: 24px 15px 22px 15px;
   flex-shrink: 0;
 
