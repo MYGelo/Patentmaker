@@ -42,6 +42,9 @@
 }
 
 .contactUs__input {
+  resize: none;
+  font-family: Manrope;
+
   padding-left: 30px;
   padding-bottom: 11px;
   width: 475px;

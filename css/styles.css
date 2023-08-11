@@ -14,6 +14,9 @@
   --hero-bg-hover: #188ce8;
   --accent-color-bg-card: rgba(33, 150, 243, 0.9);
   --cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
+
+  --myColor1: #ef5559;
+  --myColor2: #3e82be;
 }
 
 *,
@@ -45,6 +48,7 @@ img {
 }
 p {
   /* font-size: 24px; */
+  font-family: Manrope;
   margin: 0;
 }
 h1 {

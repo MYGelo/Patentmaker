@@ -117,7 +117,7 @@
   flex-shrink: 0;
 
   padding: 3px 8px 5px 8px;
-  margin-right: 360px;
+  /* margin-right: 360px; */
 
   border-radius: 5px;
   border: 1px solid transparent;
