@@ -1,4 +1,4 @@
-@property --myColor1 {
+/* @property --myColor1 {
   syntax: '<color>';
   initial-value: #ef5559;
   inherits: false;
@@ -7,7 +7,7 @@
   syntax: '<color>';
   initial-value: #3e82be;
   inherits: false;
-}
+} */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -30,8 +30,11 @@
 
   color: #fff;
 
-  background: linear-gradient(270deg, var(--myColor1), var(--myColor2));
-  transition: --myColor1 500ms, --myColor2 500ms;
+  transition: 0.5s;
+  background-size: 200% auto;
+  background-position: right center;
+  background-image: linear-gradient(to right, #EF5559, #3E82BE, #EF5559);
+
 
   text-transform: uppercase;
   font-size: 16px;
@@ -41,8 +44,7 @@
 }
 .button__primery:hover,
 .button__primery:focus {
-  --myColor1: #3e82be;
-  --myColor2: #ef5559;
+  background-position: left center;
 }
 .button__secondary {
   border: 1px solid #ee5559;
